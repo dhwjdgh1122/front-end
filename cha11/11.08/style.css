@@ -1,0 +1,13 @@
+
+/* 홀수 문단 */
+p:nth-of-type(2n+1) {
+    color: red;
+}
+/* 짝수 문단 */
+p:nth-of-type(2n) {
+    color: blue;
+}
+/* 첫 번째 문단 */
+p:nth-of-type(1) {
+    font-style: italic;
+}

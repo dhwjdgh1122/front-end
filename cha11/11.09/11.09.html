@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <h3>자식 중 유일한 요소 선택하기: only-of-type</h3>
+    자식 요소 중 유일하게 사용된 요소를 선택한다 '유일하게' 즉 딱 한 번만 사용된 요소를 지정한다
+    <br>
+    <br>
+        <span>
+            <div>난 div 태그의 첫 번째
+                <p>div 태그의 첫 번째의 자손p</p>
+            </div>
+            <p>난 유일한 p 태그</p>
+            <div>난 div 태그의 두 번째</div>
+            <div>
+            <i>난 유일 한 i 태그</i>
+            <em>난 em태그의 첫 번째</em>
+            <em>난 em태그의 두 번째</em>
+            </div>
+        </span>
+        <br>span태그의 형제 요소 중 유일하게 사용된 태그만 스타일이 지정되고
+        <br>주의할점 css에서 span 뒤에 띄어쓰기를 넣어서 자식 요소 선택해줬다
+        <br>only-of-type은 형제 요소 중에 유일하게 쓰인 태그가 해당된다 예를 들어 div태그 첫 번째 자손p태그를 만들어주면
+        유일한 p 태그와는 형제 관계가 아니기 때문에 자손p는 유일한 존재가 된다
+</body>
+</html>

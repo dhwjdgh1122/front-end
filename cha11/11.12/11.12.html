@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    3번째 퀴즈 정답 :블루베리와 민트의 마지막 요소를 선택하세요
+    last-child 형제 요소 중 마지막 즉,막내 요소를 선택하는 방법 
+
+    <div class="iceCreamStore">
+        <cone>
+            <blueberry />
+        </cone>
+        <cone>
+            <strawberry class="small" />
+            <strawberry />
+        </cone>
+        <mint />
+    </div>
+    
+    코드를 살펴보자 div태그 안에 1콘,2콘,3콘=mint가 있음 근데 mint는 cone태그의 자식요소가 아님
+    두번째 cone은 class가 small로 되어있고
+    정답 blueberry, mint:last-child
+</body>
+</html>

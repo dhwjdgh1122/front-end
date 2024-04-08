@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <h3>조부모,부모,자식 관계일 때</h3>
+    
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child">
+            </div>
+        </div>
+    </div>
+    <p>부모가 분명하게 보이는 부모,자식 관계에서 absolute는 어떤 역할을 하지?
+    </p>
+    <p>확인을 위해 10.07.html(조부모,부모,자식) 예제에서 조부모의 position값을 relative로
+        부모와 자식의 position값을 absolute로 변경해보자
+    </p>
+    <p>조부모 하늘색의 position값을 relative로 변경했다(static 기준 상대적인 위치)
+        부모,자식 보라,연두의 position값을 absolute로 변경한다(static이 아닌 position값을 가진 가장 가까운 부모 요소를 기준으로 움직인다)
+        보라색 요소가 relative값을 가진 부모태그로부터 20px 멀어짐, 연두색 요소가 부모 보라색 안에 있고,
+        보라색은 position값이 static이 아닌 absolute이기 때문에 20px 만큼 아래에 위치함
+    </p>
+    <p>정리하자면 position값이 relative인 요소는 자기 자신을 기준으로 움직이고, absolute인 요소는 static이 아닌 position값을 가진 가장 가까운 부모 요소를 기준으로 움직인다
+        
+    </p>
+</body>
+</html>

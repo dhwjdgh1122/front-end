@@ -1,0 +1,12 @@
+.up {
+    width: 100px;
+    height: 100px;
+    background-color: indigo;
+}
+.down {
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    position: relative;
+    top: 20px;
+}

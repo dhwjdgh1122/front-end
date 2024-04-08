@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div class="iceCreamStore">
+        <cone />
+        <cone>
+            <strawberry />
+            <strawberry />
+            <strawberry />
+        </cone>
+    </div>
+    첫번째 정답
+strawberry:first-child {
+
+}
+이유는 cone은 부모요소이고 :first-child은 형제 요소 중 첫 번째 요소를 선택하기 때문에
+적용대상태그는:strawberry 이면서 형제요소strawberry중 첫 번째 strawberry를 가리킴
+</body>
+</html>

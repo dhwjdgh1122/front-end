@@ -1,0 +1,6 @@
+span {
+    background-color: powderblue;
+}
+span:hover {
+    background-color: gold;
+}

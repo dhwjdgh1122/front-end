@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+    
+<body>
+    <h3>CSS 애니메이션</h3>
+    <h3>전환</h3>
+    <p>전환은 시간에 따른 상태를 지정하는 애니메이션이다, 전환의 대표적인 장점은 형태의 변형을 부드럽게 만들어준다는 점.
+        즉, 부드럽고 점진적인 애니메이션을 만들려면 움직임을 줄 때 전환을 사용해야 한다.
+    </p>
+    <p>전환에는 2가지의 필수 속성과 2가지의 선택 속성이 있다.</p>
+    <ul>
+        <li>필수속성</li>
+        <ul>
+            <li>전환 속성값</li>
+            <li>전환 시간</li>
+        </ul>
+    </ul>
+    <ul>
+        <li>선택 속성</li>
+        <ul>
+            <li>전환 타이밍</li>
+            <li>전환 지연</li>
+        </ul>
+    </ul>
+
+    전환 속성값은 전환될 속성을 지정한다.<br> element {}태그 안에 
+    transition-property: border-color; = 개별 속성
+    <br>transition-property: all; = 전체 속성<br>
+    <br>전환 시간은 전환을 시작해서 끝날 때까지의 시간을 지정한다. 초(s)또는 밀리초(ms)로 지정한다
+    기본값은 0초이며, 어떠한 애니메이션도 일어나지 않는다는 의미이다. 부드러운 애니메이션을 주려면 전환 시간을 반드시 입력해야 한다<br>
+    element {} 태그 안에 transition-duration: 0.5s;<br>
+    <br>전환 타이밍은 전환이 이루어지는 시점을 지정한다<br>
+    전환 타이밍 속성값으로는 linear,ease-in,ease-out,step-start,ster-end 등이 있는데
+    기본값은 ease이다 linear은 일정하게 전환하고,ease-in은 느려졌다 빨라진다<br>
+    <br>전환 지연은 전환을 지연시켜 전환이 시작되는 시기를 지정한다 기본적으로 전환은 조건이 충족되는 즉시 진행된다
+    하지만 전환지연을 사용하면 전환을 지연시킬 수 있다, 각 속성을 개별적으로 작성할 수 있지만 더 빠르고 깔끔한 코드를 위해
+    필요한 속성들을 한 번에 쓰면 더 큰 효과를 볼 수 있다. 중요한 것은 필수 속성인 전환 속성값과 전환 시간을 입력하는 것이다
+    <br>element {} 태그 안에 transition-delay: 1s;<br>
+    <br>div태그와 css로 사각형을 만들고 전환 필수값을 지정해 애니메이션을 만듦,
+    애니메이션이 이루어질 행동(hover)과 결과를 볼 background를 작성해준다
+
+    <div></div>
+</body>
+</html>

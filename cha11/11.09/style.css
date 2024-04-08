@@ -1,0 +1,6 @@
+p:only-of-type {
+    background-color: lime;
+}
+span :only-of-type {
+    color: red;
+}

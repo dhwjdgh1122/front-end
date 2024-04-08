@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <h3>가상 선택자 사용법</h3>
+    <p>선택자는 '무언가를 선택하는 요소'이다 CSS에서 선택자는 스타일링할 특정 요소를 선택할 때
+        사용한다 앞에서는 전체,태그,클래스,아이디 선택자 등을 배웠고, 11장에선 선택한 요소가
+        특별한 상태일 때 사용할 수 있는 가상 선택자를 배워보자 
+    </p>
+    <h3>가상 선택자</h3>
+    <p>가상 선택자를 어디에 사용할 수 있나 웹 페이지에서 버튼을 누르면 해당 버튼의 색이나 모양이 변한다
+        상태에 따라 변화를 주고 싶을 때 가상 선택자를 사용한다, 선택한 요소가 특별한 상태여야 만족할 수 있다
+        두가지로 분류가 되는데 1.동적 가상 클래스 2.구조적 가상 클래스가 있다
+    </p>
+    <strong>동적 가상 클래스: 어떤 상태나 조건이 발생할 때, 사용자의 액션에 따라 스타일이 바뀌는 선택자</strong>
+    <br>사용자와 웹 페이지간의 상호작용이 필요할 때 사용한다. active,visited,disabled,hover,focus 있다
+
+    <h3>액션이 필요해 : active</h3>
+    active는 클릭 시 활성화되는 가상 클래스이다 예를 들어 버튼을 누르면 active 가상 클래스가 활성화되고
+    선택한 항목에 선언한 css 스타일링이 적용된다
+    <br>
+    button 태그를 사용하여 클릭할 때 텍스트 색이 바뀌는 코드를 작성해보자
+    <br><button>클릭하세요</button>
+    
+</body>
+</html>

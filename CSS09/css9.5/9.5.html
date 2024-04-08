@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>교차축 정렬하기 : align-items</h3>
+    <p>align-items 속성은 교차축을 정렬한다(flex-direction으로 축 방향을 변경해주지 않는 한 기본값인 세로축을 정렬한다.)</p>
+    <p>align-items의 속성값은 아래와 같다</p>
+    <strong>stretch : 요소의 길이와 교차축의 길이를 같게 함</strong><br>
+    <strong>flex-start : 시작 위치에 정렬</strong><br>
+    <strong>flex-end : 끝 정렬</strong><br>
+    <strong>center : 중앙 정렬</strong>
+
+    <p>index.html에서 align-items을 이용한 세로축 가운데 정렬을 했고, html과 body에 height값을 100%로 주어야 한다
+        높이를 지정하지 않으면 화면의 높이는 요소 중 가장 긴 길이를 가진 요소를 기준으로 높이를 정하기 떄문에
+        브라우저가 보여주는 높이에 맞게 정렬을 해야하는데 요소를 기준으로 정렬을 하기 때문에 여백이 생긴다 (브라우저 화면 기준이 없다)
+    </p>
+
+    <p>왜 html과 body 태그 모두 100%로 지정해줘야 할까? 왜냐하면, %는 부모 요소에 대해
+        상대적으로 길이가 정해지기 때문이다. 즉 div 태그는 부모인 body태그와 최상위 부모인 html 태그의 높이에 대해
+        사대적으로 100%라는 값을 가지는 것이기 때문
+    </p>
+
+    
+</body>
+</html>

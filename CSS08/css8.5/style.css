@@ -1,0 +1,10 @@
+@media (max-width: 1280px) {
+    body {
+        background-color: darkgray;
+    }
+}
+@media (max-width:600px) {
+    body {
+        background-color: beige;
+    }
+}

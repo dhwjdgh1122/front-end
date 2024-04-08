@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>햄버거 만들기 프로젝트</title>
+</head>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <h3>사용자 지정 속성, before, after 속성</h3>
+    <p>사용자 지정 속성은 색상뿐 아니라, css 모든 속성을 지정할 수 있다.
+        :element {사용자 지정 속성 이름}으로 선언하고 이 선언된 속성은 var()함수를 사용하여 나타탠다
+        사용자 지정 속성을 HTML전체에 적용하고 싶으면 :element에:root를 사용한다
+    </p>
+    <p>사용자 지정 속성은 우리가 지정하는 대로 변하기 때문에 변수라고 할 수 있다 변수를 지칭하는
+        var와 괄호() 안에 사용자 지정 속성 이름을 넣으면 우리가 지정한 속성을 사용할 수 있다
+    </p>
+    <p>새로운 가상 선택자 before,after : 요소 바로 앞뒤에 생성되는 자식 요소를 의미한다
+        자식 요소이지만, 실제 자식이라기보다는 가상의 무언가를 만드는거다 ! 반드시 content를 사용해야한다
+        content로 텍스트를 지정해주면 지정된 텍스트나 이미지가 표시된다 content를 적지 않으면
+        가상 선택자가 제대로 보이지 않으니 꼭 넣어야 함 
+    </p>
+    <p>content를 사용할 때 쓰이는 대표적인 속성은 none,string,image 가 있음 html 코드에 New를 작성하지 않았지만
+        가상 선택자 after로 지정한 클래스에만 생긴 걸 확인 가능하다  
+    </p>
+    <p><h3>string 속성을 사용한 리스트</h3></p> 
+
+    <ol>
+        <li>coffee</li>
+        <li class="new-sign">sandwich</li>
+        <li>fruit</li>
+        <li class="new-sign">tea</li>
+    </ol>
+
+    <h3>체크박스 가상 선택자</h3>
+    <p>css에서 :checked를 사용하면 '체크박스가 실행될 때 {}에 있는 스타일을 실행한다'
+        input:checked {} 안에는 box-shadow 0 0 0 3px; hotpink 설정하면 체크할 때 일어나는 스타일 지정
+    </p>
+    <input type="checkbox">
+    
+
+    <h3>none 속성</h3>
+    <p>body태그에 div를 생성하고, after를 사용하여 보라색과 비슷한 브라운박스가 아래 생김
+        주의할점은 after에 top을 지정해주지 않으면 가상 선택자(보라색이 보이지 않음) why
+        보라색 박스와 브라운 박스가 겹쳐있기 때문이다 content,after,before,element 순서로 배치되어 있다(content가 맨 뒤)
+        반면 앞의 실행 결과에서는 content가 제일 앞이고 element(보라색 박스)가 가장 뒤이다,element가 무조건 중간에 있는게 아니다
+        그러고 content에 빈 값인 ""을 주었다 div처럼 기능이 없는 빈 공백을 복사할 때는 content에 ""만 써주면 된다
+        가상 요소에도 스타일링을 할 수 있고 top,left,right,bottom으로 위치 변경도 가능
+    </p>
+    
+   
+    <div class="box"></div>
+    
+    
+</body>
+</html>

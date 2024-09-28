@@ -1,1 +1,1 @@
-# front-end-study
+## HTML,CSS, 학습 리드미 저장소

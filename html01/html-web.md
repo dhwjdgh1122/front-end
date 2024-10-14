@@ -95,7 +95,7 @@ head 태그 안에 다양한 meta 태그가 있는데,
 
 아래 사진은 나의 블로그에 적은 글이다.
 
-<img src = "meta-tag.png" width="800" height="200">
+<img src = "meta-tag.png" width="900" height="200">
 
 1회사 스프린트 회고 밑에  약 5개월 동안 ~~~ 적힌 내용이 이제 name이 "description" 일 때 content 내용이라고 생각하면 된다.
 

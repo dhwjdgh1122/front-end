@@ -132,3 +132,40 @@ img는 image의 약자로 HTML 문서에 이미지를 삽입하는 태그이다.
 **alt 속성은 적지 않아도 실행은 되지만 적어주는 게 좋다. src에 지정한 이미지를 제대로 읽어오지 못할 때 alt 속성에 적은 문구가 보이게 된다.**
 
 `alt`는 시각장애인을 위한 스크린리더를 지원한다. 스크린리더란 화면을 읽어주는 프로그램으로 스크린리더가 화면의 글을 읽을 때 `alt`값을 참조한다. 따라서 `img`태그뿐만 아니라 다른 태그에서도 `alt` 속성이 있다면 써주는 것이 좋다.
+
+### form 태그
+form 태그는 사용자 입력 양식을 만들 때 사용한다. 많은 요소가 있지만 많이 쓰이는 `input`, `label`을 보자
+
+form 태그 기본 형식은 아래와 같다.
+```html
+<form>form 요소 태그</form>
+```
+
+```html
+<form action="myform.html">   <!--1-->
+  <label for="fname">first name:</label> <!--2-->
+  <input type="text" id="fname"> <!--3-->
+  <label for="lname">last name:</label> <!--4-->
+  <input type="text" id="lname"> <!--5-->
+  <input type="submit"> <!--6-->
+</form>
+```
+<img src =html-form-tag.png >
+
+`3`, `5` input 태그는 사용자 입력을 받는 폼이다. 사진에 보면 흰색 칸이 해당된다.
+`2` first name과 `4` last name은 레이블(라벨)을 붙인다 상품에 스티커 라벨을 붙이듯 폼에 이름을 붙여준다. `6` input 태그에 type 속성을 `submit`으로 주어 실행 버튼 제출을 만들었다.
+
+`1` form 태그의 역할은 제출 버튼을 눌렀을 때 입력값을 처리할 대상을 지정해준다. 코드에서 form 태그의 action 속성을 이용해 myform.html로 이동하라고 지정했다. 
+
+### input 태그
+input 태그는 사용자가 데이터를 입력하는 영역을 결정한다. input 태그의 대표 속성은 아래와 같다.
+
+- type : input 태그의 속성을 결정한다. 값으로는 text(텍스트 입력), checkbox(체크박스), password(패스워드), data(날짜) 등이 있다.
+- id : input의 이름을 지정해주는 역할을 한다.
+
+<img src = "html-input-tag.png">
+
+<img src = "html-input-password.png">
+
+<img src = "html-input-date.png">
+

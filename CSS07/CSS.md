@@ -109,4 +109,42 @@ p {
 
 보이는 결과는 같지만, HTML 파일에서 꾸미기 코드를 분리했기 때문에 효율성이 훨씬 상승했다.
 
-## 글씨 크기, 정렬
+## 글씨 크기
+
+`font-size`는 글씨 크기를 조절하는 CSS 속성이다. 글씨 크기를 px, % 등으로 나타낼 수 있다.
+
+stlye.css에서 h1 태그의 폰트 사이즈는 100px;로 지정해보자
+
+```css
+  h1 {
+    font-size : 100px;
+  }
+```
+
+<img src="css2.png" width=400>
+
+## 글씨 정렬
+
+정렬도 CSS 스타일이다. MDN 문서 검색을 통해 나타타는 결과 `text-align`이 정렬 속성이라고 알려준다.
+
+예제 코드를 보니 left, right, center, jusify 값을 쓸 수 있다.
+
+마찬가지로 style.css 에서만 수정을 하고 확인해보자.
+
+```css
+  h1 {
+    font-size : 100px;
+    text-align : center;
+  }
+  p {
+    text-align : center;
+  }
+```
+
+<img src="css3.png" width=400>
+
+---
+실행결과 글씨 크기 조절, 글자 정렬하는 방법까지 보았다.
+
+## CSS 선택자
+

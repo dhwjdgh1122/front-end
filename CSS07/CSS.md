@@ -164,3 +164,18 @@ CSS 선택자(Selector)는 HTML에 스타일을 적용할 때 HTML 요소를 지
 
 ## 전체 선택자
 
+전체 선택자(universal selector)는 모든 HTML 문서를 선택해 스타일을 적용해준다. 특정 태그 대신 * 기호를 사용한다. 
+
+```html
+  <style>
+    * {
+      color : red;
+    }
+  </style>
+```
+<img src="css4.png" width=400>
+
+---
+`*`은 head를 포함한 HTML 문서 내의 모든 요소를 선택한다. 실행 결과 전부 빨간색으로 표시
+
+## 유형 선택자

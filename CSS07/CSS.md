@@ -1,6 +1,6 @@
 ## CSS란?
 
-CSS는 Cascading Style Sheets의 약자이다. HTML이 정보를 표현한다면 CSS는 HTML 문서를 시각적으로 꾸미는 역할을 한다.
+`CSS`는 Cascading Style Sheets의 약자이다. HTML이 정보를 표현한다면 CSS는 HTML 문서를 시각적으로 꾸미는 역할을 한다.
 
 HTML 문서를 시각적을 꾸미는 언어, 왜 HTML에 꾸미기 기능을 넣지 않고 CSS를 별도로 만들었을까?
 

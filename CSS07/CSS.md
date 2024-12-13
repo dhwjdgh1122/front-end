@@ -254,3 +254,61 @@ stlye.css에서 h1 태그의 폰트 사이즈는 100px;로 지정해보자
 예를 들어 p 태그에 클래스 이름으로 c1,c2,c3를 지정해 각각에 스타일을 지정해놓을 수 있는 것이다.
 
 보통 아이디 선택자보다 클래스 선택자를 많이 사용한다. 이유는 유연성과 재사용성 때문이다.
+
+사용법은 클래스명 앞에 점 .을 붙여주면 된다.
+
+```html
+<style>
+  .클래스명 {
+    속성
+  }
+</style>
+```
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Heading</h1> <!--1-->
+    <p class="container">p 태그 1</p> <!--2-->
+    <p>p 태그 2</p> <!--1-->
+    <p>p 태그 3</p> <!--1-->
+  </body>
+</html>
+```
+
+```css
+.container { // class값이 container인 모든 요소 선택
+  color: red;
+}
+```
+
+아이디 선택자 코드와 차이점은 p 태그 1 앞 p 태그에 class로 container로 지정했다는 점이다.
+
+만약, 클래스 선택자가 여러개라면?? p 태그 1과, p 태그 2를 빨간글씨로 나타내면서 p 태그 1만 백그라운드 컬러를 주고 싶다면 어떻게 작성해야 할까??
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Heading</h1> 
+    <p class="class-1 class-2">p 태그 1</p> <!--1-->
+    <p class="class-1">p 태그 2</p> <!--2-->
+    <p>p 태그 3</p> 
+  </body>
+</html>
+```
+
+<img src="css6.png" width=300>
+
+실행 결과 코드에서 `1`에서 p 태그에는 class-1과 class-2의 스타일을 모두 적용하고, `2`두 번째 p 태그에는 class-1만을 적용한다. 이처럼 클래스 선택자는 하나 이상의 클래스값을 가질 수 있기 때문에 스타일을 주고 싶은 선택자를 자유롭게 지정할 수 있다.
+
+아이디와 클래스 선택자의 이름은 해당 태그를 가장 잘 설명하는 단어로 짓고, 이름만 보고도 태그 역할을 알 수 있다면, 제대로 네이밍한 것이다. 좋은 네이밍 습관을 가져야 현업에서도 사랑??? 받을 수 있다....
+
+

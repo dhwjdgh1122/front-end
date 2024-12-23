@@ -28,9 +28,10 @@ h1 태그로 제목을 Emotion으로 지정했고, SAD, HAPPY, LOVE 는 span 태
 
 <img src="css1.png"> <img src="css3.png"> 
 
-개발자 도구 F12를 이용해서 h1과 span에 마우스 커서를 올리면 위 사진처럼 파란색칸이 보이는 데,
+개발자 도구 F12를 이용해서 h1과 span에 마우스 커서를 올리면 위 사진처럼 파란색칸이 보이고, body 본문안에 스타일시트 형식이 display: block 으로 표시된 것을 확인할 수 있다!
+이게 무슨 뜻이냐면,
 
-<img src="css5.png">
+<img src="css5.png"> <img src="css6.png">
 
 
 Emotion과 SAD에는 어떤 태그를 사용했는지 표시되어있고, 파란색으로 크기가 지정되어있다.

@@ -22,7 +22,7 @@ CSS 배치 속성과, 반응형 디자인에 대해 알아보자. 우선 `h1`태
 
 <img src="css.png">
 
-h1 태그로 제목을 Emotion으로 지정했고, SAD, HAPPY, LOVE 는 span 태그로 줇자꿈을 하지 않고 구문 요소를 의미한다.
+`h1` 태그로 제목을 **Emotion**으로 지정했고, **SAD, HAPPY, LOVE** 는 `span` 태그로 줄바꿈을 하지 않고 구문 요소를 의미한다.
 
 코드에서는 Emotion, SAD, HAPPY, LOVE 모두 Enter키를 이용해서 각자 다른 줄에 있는데 왜 사진에서 Emotion은 첫 줄에, SAD, HAPPY, LOVE는 같은 줄에 존재하는 것일까? 라는 의문점이 들어야한다.
 

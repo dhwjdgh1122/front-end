@@ -24,14 +24,18 @@ CSS 배치 속성과, 반응형 디자인에 대해 알아보자. 우선 `h1`태
 
 `h1` 태그로 제목을 **Emotion**으로 지정했고, **SAD, HAPPY, LOVE** 는 `span` 태그로 줄바꿈을 하지 않고 구문 요소를 의미한다.
 
-코드에서는 Emotion, SAD, HAPPY, LOVE 모두 Enter키를 이용해서 각자 다른 줄에 있는데 왜 사진에서 Emotion은 첫 줄에, SAD, HAPPY, LOVE는 같은 줄에 존재하는 것일까? 라는 의문점이 들어야한다.
+코드에서는 **Emotion, SAD, HAPPY, LOVE** 모두 Enter키를 이용해서 각자 다른 줄에 있는데 왜 사진에서 **Emotion**은 첫 줄에, **SAD, HAPPY, LOVE**는 같은 줄에 존재하는 것일까? 라는 **의문점**이 들어야한다.
 
 
 <img src="css1.png"> <img src="css3.png"> 
 
-개발자 도구 F12를 이용해서 h1과 span에 마우스 커서를 올리면 위 사진처럼 파란색칸이 보이고, body 본문안에 스타일시트 형식이 display: block 으로 표시된 것을 확인할 수 있다!
-이게 무슨 뜻이냐면,
+개발자 도구(F12)를 이용해서 `h1`과 `span`에 마우스 커서를 올리면 위 사진처럼 파란색칸이 보이고,
+body 본문안에 스타일 형식이 `display: block` 으로 표시된 것을 확인할 수 있다.
 
+1. Emotion은 왜 파란색 칸이 길까?
+2. SAD는 왜 파란색칸이 글자크기에 맞게끔 되어있을까?
+
+이유는 `display: block` 으로 설정되어있기 때문이다.
 <img src="css5.png"> <img src="css6.png">
 
 

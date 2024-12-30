@@ -78,3 +78,25 @@ body 본문안에 스타일 형식이 `display: block` 으로 표시된 것을 �
  <img src="css9.png" width=400> <img src="css10.png" width=400>
 
  h 태그도 딱 콘텐츠 너비만큼만 가로 공간을 차지하게 바뀌며 같은 줄에 나타난다.
+
+
+ `display` 속성으로 `block`으로 변경하면
+
+ ```css
+ h1, span {
+  border: 3px solid red;
+  display: block;
+ }
+ ```
+실행결과 아래 사진처럼 가로 줄 전체를 표시하며, 모두 줄바꿈이 발생한다.
+
+
+
+ <img src="css11.png" height=140>
+
+ 사진을 보면 SAD와 HAPPY, HAPPY와 LOVE 사이 빨간 줄이 두꺼워 보이는 이유는 코드를 통해 설명할 수 있다. `border: 3px solid red;` 속성으로 테두리를 3px, solid, red로 지정했다.
+
+ **SAD** 에도 굵기가 `3px`로 되어있고, **HAPPY**에도 `3px`로 되어 있기 때문에, 두꺼워보이는 구간은 총 `6px`이다.
+
+ 만약 일정하게 보이게 하고 싶으면 `margin`값을 설정해주면 되는데, 그 전에 박스 모델 : 마진, 테두리, 패딩 개념에 대해서 알아야 한다.
+

@@ -1,6 +1,7 @@
-h1, span {
-    border: 3px solid red;
-    display: block;
+h1 {
+    border-bottom: 1px solid black;
+    padding: 10px;
+
     
     
 }

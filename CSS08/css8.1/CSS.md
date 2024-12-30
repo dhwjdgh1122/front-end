@@ -133,3 +133,33 @@ body 본문안에 스타일 형식이 `display: block` 으로 표시된 것을 �
 
 - **마진**은 **밖**에서 생기는 공간
 - **패딩**은 **안**에서 생기는 공간
+
+**Emotion** 텍스트와 그 아래 감정을 나열한 텍스트 사이에 구분선을 넣는다고 한다면
+
+테두리를 지정하는 속성이 무엇인가를 알아야 한다. 선을 그었던 `border` 속성을 사용하며 아래에 구분선을 넣어줄거니까 `border-bottom` 이라고 작성하면 된다.
+
+```css
+h1 {
+  border-bottom: 1px solid black;
+}
+```
+
+<img src="css13.png" height=80>
+
+사진처럼 Emotion 텍스트 아래 구분선이 생겼다.
+
+<img src="css14.png">
+
+개발자 도구(F12)를 이용해 확인해보면, Emotion 텍스트에 대해서 마진, 보더, 패딩값을 확인할 수 있다.
+
+Emotion과 구분선의 간격을 넓히고 싶다면?? 어떤 값을 넣어줘야 할까 패딩이다. 요소(Emotion)를 감싸는 패딩(padding)값을 10px;로 설정해준다면? 
+
+```css
+h1 {
+  border-botton: 1px solid black;
+  padding: 10px;
+}
+```
+<img src="css15.png">
+
+사진처럼 초록색으로 보여진 10px 만큼 요소(Emotion)를 감싸는 패딩(padding)이 생긴걸 확인할 수 있다.

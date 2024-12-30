@@ -58,4 +58,23 @@ body 본문안에 스타일 형식이 `display: block` 으로 표시된 것을 �
 
 태그마다 이 두 특성은 **변하지 않는 걸까**?? 라는 의문점이 들어야 한다. `display`라는 `CSS` 속성으로 바꿔줄 수 있다. 
 
-<img src=css7.png>
+<img src="css8.png" width=320 height=350>
+ <img src="css7.png" width=400 height=230>
+
+
+정리하면,
+
+ `display`에서 `block/inline` 속성값을 적용한 결과는 다음과 같다. `display`값이 `block`이면 **요소 가로 줄 전체**를 차지하기 때문에 요소마다 **줄바꿈이 발생**한다. 반면 `display`값이 `inline`이면 **요소 크기**만큼 공간을 차지하기 때문에 요소 자체의 크기에 따라 **줄바꿈이 발생한다**.
+
+ `display` 속성으로 `inline` 으로 변경하면
+
+ ```css
+ h1, span {
+  border: 3px solid red;
+  display: inline;
+ }
+ ```
+
+ <img src="css9.png" width=400> <img src="css10.png" width=400>
+
+ h 태그도 딱 콘텐츠 너비만큼만 가로 공간을 차지하게 바뀌며 같은 줄에 나타난다.

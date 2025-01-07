@@ -1,1 +1,1 @@
-<h1>CSS 배치 속성</h1>
+<h1>CSS 레이아웃 : flex box</h1>

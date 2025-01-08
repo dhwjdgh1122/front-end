@@ -215,3 +215,64 @@ HTML 코드에서 인지하는 화면 높이는 가장 긴 검정색 길이만�
 - `flex-end`는 **자식 요소**가 **부모의 끝 위치(하단)** 에 배치되기 위해서는 **"끝 위치"** 라는 **기준점**을 알아야 하는데 이걸 우리는 `height: 100%`라는 높잇값으로 설정한다. 설정을 안하면 기본적으로 콘텐츠 높이에 맞춰 축소되므로 "**끝 위치**" 라는 기준점이 의미를 잃게 되는 것이지. 그래서 부모 컨테이너가 뷰포트 전체를 기준으로 하단 배치를 가능하게 만드는 것이다.
 
 **결론** : 부모의 끝점을 기준으로 자식을 배치하려면, 부모 컨테이너(`html`, `body`)의 높이가 명확히 정의되어야 끝점을 알 수 있으므로 `height: 100%`를 설정한다.
+
+
+## 플렉스 축 방향 바꾸기 : flex-direction
+
+`justift-content`가 주축을 정렬하고 `align-items`가 교차축을 정렬한다. 별도의 속성 지정이 없으면 주축은 가로, 교차축은 세로를 의미하지만 이 축은 `flex-direction`에 의해 바뀔 수 있다. `dirction`이 방향이라는 의미를 가지고 있는데 `flex-direction`이니까 플렉스의 축 방향을 바꿔주는 속성이라고 생각하면 된다. 지정하는 방식은 아래와 같다.
+
+```css
+body { /*적용 대상의 부모 태그*/
+  flex-direction /*속성*/: column; /*값*/
+}
+```
+
+`flex-direction` 속성에는 아래와 같은 값이 올 수 있다.
+
+- `row(기본값)` : 가로 방향(행) 배치
+- `row-reverse` : 역순으로 가로 방향(행) 배치
+- `column` : 세로 방향(열) 배치
+- `column-reverse` : 역순으로 세로 방향(열) 배치
+
+
+<img src="css12.png" width=350 height=380>
+
+
+```css
+html, body{
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column; /*1*/
+  justify-content: center; /*2*/
+  
+  
+}
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red
+}
+#second {
+  background-color: black;
+}
+```
+
+<img src="css13.png" width=400>
+
+`1` `flex-direction: column`을 하면 주축을 세로 방향으로 변경, `2` `justify-content: center`를 입력해서 주축 기준(현재 세로축이 기준임) 가운데로 옮겨짐
+
+
+
+**flex-end**
+
+주축이 세로 방향이기 때문에 세로 축 기준 맨 밑으로 이동한다. 이것 또한 `height: 100%`로 지정해줘야 한다.
+
+<img src="css14.png" width=400>
+
+
+## 정리
+
+`justify-content`와 `align-items`는 각각 주축과 교차축을 의미하며, 가로축,세로축을 기본값으로 가지고 있다. 하지만 `felx-direction`으로 주축과 교차축을 바꿀 수 있다. 즉, `flex-direction` 에 row, column 중 어떤 값을 주는지에 따라 주축과 교차축이 변한다.

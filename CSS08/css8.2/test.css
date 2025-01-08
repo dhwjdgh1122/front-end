@@ -4,18 +4,21 @@ html, body{
 
 body {
   display: flex;
+  flex-direction: column; /*현재 기본값 가로축을 기준으로 놓아져있고*/  
+  justify-content: center;  /*가로축기준을 세로로 했으니 세로로 3개 놓아짐+center니까 세로(가로) 기준 가운데위치*/
+  align-items: center;
+ 
+    /*이제 가로축이 세로가 되었기 때문에 웹 브라우저에서 가로와 세로는 반대라 생각하면 됨 그래서 align-items: center 하면
+  가운데로 이동하는거임*/
 
-  align-items: end;
-  
-  
+
 }
 div {
-  width: 200px;
-  height: 200px;
-  background-color: red;
+  width: 100px;
+  height: 100px;
+  background-color: red
 }
 #second {
-  width: 200px;
-  height: 400px;
   background-color: black;
 }
+/*  */

@@ -275,4 +275,5 @@ div {
 
 ## 정리
 
-`justify-content`와 `align-items`는 각각 주축과 교차축을 의미하며, 가로축,세로축을 기본값으로 가지고 있다. 하지만 `felx-direction`으로 주축과 교차축을 바꿀 수 있다. 즉, `flex-direction` 에 row, column 중 어떤 값을 주는지에 따라 주축과 교차축이 변한다.
+`justify-content`와 `align-items`는 각각 주축과 교차축을 의미하며, 가로축,세로축을 기본값으로 가지고 있다. 하지만 `felx-direction`으로 주축과 교차축을 바꿀 수 있다. 즉, `flex-direction` 에 **row, column** 중 어떤 값을 주는지에 따라 주축과 교차축이 변한다.
+

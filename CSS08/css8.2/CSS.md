@@ -137,4 +137,41 @@ div {
  - `flex-end` : 끝 정렬
  - `center` : 중앙 정렬
 
- <img src="css4.png">
+ <img src="css4.png" width=500>
+
+ ```css
+ html,body {
+  height: 100%; /*1*/ 
+ }
+
+ body {
+  display: flex;
+  align-items: center; /*2*/
+ }
+
+ div {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+ }
+ #second {
+  background-color: seagreen;
+ }
+ ```
+
+<img src="css5.png" width=550>
+
+`2` 부모인 body에 `align-items: center`를 지정했고, `1`html과 body의 height 값을 100%로 지정했다.
+
+
+## html과 body에 height값을 100%로 주어야 하는 이유!!
+
+높이를 지정하지 않으면 화면의 높이는 요소 중 가장 긴 길이를 가진 요소를 기준으로 높이를 정한다.
+
+<img src="css6.png">
+
+HTML 코드에서 인지하는 화면 높이는 가장 긴 검정색 길이만큼이다 body크기만큼, 브라우저가 보여주는 높이는 아래 여백까지 전체높이 이고, 아래는 여백이다
+
+중요한 것은 우리가 보는 화면의 흰 여백은 HTML이 제공하는 영역(높이)에 속하지 않는다는 점이다. 이 상태에서 가로, 세로 정렬을 하면????
+
+<img src="css7.png" width=500>

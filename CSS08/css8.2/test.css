@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+div {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+#second {
+  width: 200px;
+  height: 400px;
+  background-color: black;
+}

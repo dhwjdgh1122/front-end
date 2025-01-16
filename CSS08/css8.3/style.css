@@ -1,4 +1,13 @@
-h1,span {
-    display: block;
-    border: 3px solid red;
+body {
+    display: flex;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+}
+
+#second {
+    background-color: seagreen;
 }

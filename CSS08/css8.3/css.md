@@ -78,3 +78,17 @@ div {
 위 코드에서는
 - `body`가 `<div>`들의 부모로 작용
 - `<div>`가 자신의 텍스트(자식 콘텐츠)를 감싸는 부모로 작용
+
+
+```css
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+```
+을 `CSS`에 추가하고 확인하면,
+
+<img src="css.png">
+
+숫자가 가운데 정렬되어 있는 것을 확인할 수 있다.

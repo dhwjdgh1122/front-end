@@ -6,6 +6,9 @@ div {
     width: 200px;
     height: 200px;
     background-color: tomato;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 #second {

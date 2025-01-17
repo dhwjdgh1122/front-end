@@ -1,16 +1,10 @@
-body {
-    display: flex;
-}
-
 div {
     width: 200px;
     height: 200px;
     background-color: tomato;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    position: static;
 }
 
 #second {
-    background-color: seagreen;
+    background-color: teal;
 }

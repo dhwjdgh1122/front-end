@@ -92,3 +92,63 @@ div {
 <img src="css.png">
 
 숫자가 가운데 정렬되어 있는 것을 확인할 수 있다.
+
+## 위치 지정하기
+
+position 속성은 웹 페이지의 요소를 어떻게 배치할지 정한다. 웹 페이지는 수많은 요소들과의 위치 관계로 이루어져있다. 
+
+예를 들어
+<img src="css1.png">
+
+구글 로고 아래 검색창이 있고. 그 아래 버튼들이 있다. 이렇게 각 요소를 배치할 때 `position`이 결정적인 역할을 한다. 아래와 같이 사용한다.
+
+```html
+<style>
+  div {
+    positon <!--속성--> : static; <!--값-->
+  }
+</style>
+```
+
+네 가지 위칫값의 특징
+- `static`(기본값) : 기본 위치
+- `fixed` : 웹 브라우저 화면 기준 고정 위치
+- `relative` : 기본 위치(static)기준 상대적인 위치
+- `absolute` : `static`이 아닌 가장 가까운 조상 기준 상대적 위치
+
+
+## static(기본값) : 기본 위치
+
+`static`은 '변화나 움직임이 없는'이라는 뜻으로, `position`값을 따로 지정해주지 않으면 모든 태그는 `static` 상태이다. 즉 `static`이 기본값이다. `div` 태그로 정사각형 2개를 만들고 위칫값을 `static`으로 지정하면,
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div></div>
+    <div id="second"></div> <!--1-->
+  </body>
+</html>
+```
+
+```css
+div {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    position: static;  <!--2-->
+}
+
+#second {
+    background-color: teal;
+}
+```
+
+`div` 태그 두 개를 만들고 `1` 두 번째 `div` 태그 `id`값으로 `second`로 지정한다. style.css에 `div`태그 크기와 색상을 지정하고 `2` `div` 태그의 `position` 값을 `static`으로 지정한다.
+
+`div`태그의 `position`값으로 `static`을 지정한 결과와 그렇지 않은 결과는 같다.  `static`이 기본값이기 때문이지. 주목할 점은 `position`은 항상 태그 속성으로 존재한다는 것이다.
+
+<img src="css2.png">

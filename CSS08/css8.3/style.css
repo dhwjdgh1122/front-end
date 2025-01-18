@@ -1,14 +1,13 @@
-body {
-    height: 1000vh;
+.up {
+    background-color: indigo;
+    width: 100px;
+    height: 100px;
 }
 
-div {
-    width: 200px;
-    height: 200px;
-    background-color: tomato;
-    position: static;
-}
-#second {
-    background-color: teal;
-    position: fixed;
+.down {
+    background-color: deeppink;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 20px;
 }

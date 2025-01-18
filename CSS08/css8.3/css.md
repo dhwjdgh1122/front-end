@@ -191,3 +191,49 @@ div {
 ### 형제 관계일 때
 
 인접한 2개의 형제 `div` 태그를 나타낸다. 형제 태그는 같은 부모를 가진 요소를 말한다.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h3>형제 관계일 때</h3>
+    <div class="up"></div>
+    <div class="down"></div>
+  </body>
+</html>
+```
+
+```css
+.up {
+    background-color: indigo;
+    width: 100px;
+    height: 100px;
+}
+
+.down {
+    background-color: deeppink;
+    width: 100px;
+    height: 100px;
+}
+```
+
+<img src="css5.png">
+
+`1` index.html에서 인접한 `div` 태그 두 개를 생성하고 `2`style.css에서 `div`태그를 정사각형으로 만들었다. 아래에 있는 핑크색 박스의 `position`값을 `relative`로 지정하고 `top` 속성을 이용하여 위쪽에서 **20px** 떨어지도록 만들어보자
+
+```css
+.down {
+    background-color: deeppink;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 20px;
+}
+```
+
+`1` down 클래스에 속하는 태그에 `position` 값을 `relative`로 지정하고 `2` `top` 속성값으로 **20px**을 지정한다. 그러면 나란히 붙어있던 핑크색 박스는 자기 자신을 기준으로 위쪽에서 20px 만큼 떨어진다.
+
+<img src="css7.png">

@@ -183,3 +183,6 @@ div {
 
 <img src="css4.png">
 
+
+## relative : 기본 위치(static)기준 상대적인 위치
+

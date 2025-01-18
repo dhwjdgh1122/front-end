@@ -186,3 +186,6 @@ div {
 
 ## relative : 기본 위치(static)기준 상대적인 위치
 
+`relative`는 '상대적인' 이라는 뜻이다. 어디를 기준으로 하는 상대적일까? 바로 자기 자신이다. `position: relative`는 자기 자신을 기준으로 top(위), left(왼쪽), right(오른쪽), bottom(아래)에 간격을 주고 싶을 때 사용한다.
+
+### 형제 관계일 때

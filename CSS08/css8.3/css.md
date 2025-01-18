@@ -147,9 +147,9 @@ div {
 }
 ```
 
-`div` 태그 두 개를 만들고 `1` 두 번째 `div` 태그 `id`값으로 `second`로 지정한다. style.css에 `div`태그 크기와 색상을 지정하고 `2` `div` 태그의 `position` 값을 `static`으로 지정한다.
+`div` 태그 두 개를 만들고 `1` 두 번째 `div` 태그 `id`값으로 `second`로 지정한다. **style.css**에 `div`태그 크기와 색상을 지정하고 `2` `div` 태그의 `position` 값을 `static`으로 지정한다.
 
-`div`태그의 `position`값으로 `static`을 지정한 결과와 그렇지 않은 결과는 같다.  `static`이 기본값이기 때문이지. 주목할 점은 `position`은 항상 태그 속성으로 존재한다는 것이다.
+`div`태그의 `position`값으로 `static`을 지정한 결과와 그렇지 않은 결과는 같다.  `static`이 기본값이기 때문이지. 주목할 점은 `position`은 항상 태그 속성으로 존재한다는 것이다. 결론적으로 위 코드에서 `div` 태그는 `static` 상태이기 때문에, 브라우저는 기본적인 문서 흐릅에 따라 한 태그가 위에서 아래로 차례로 배치된다. 이로 인해 두 `div`는 겹치지 않고 순서대로 배치되는 것이다!!!
 
 <img src="css2.png">
 
@@ -157,4 +157,29 @@ div {
 ## fixed : 웹 브라우저 화면 기준 고정 위치
 
 `fixed`는 '고정된' 이라는 뜻이다. `fixed`가 적용된 요소는 페이지를 스크롤해도 항상 같은 위치에 있는다. 일반적으로 웹 페이지 상단에 있는 **메뉴바** 혹은 **네비게이션바**에 `fixed`를 적용한다.
+
+`fixed`를 시각적으로 보기 쉽게 설명하기 위해 페이지 높이를 길게 조정하고 `id`가 `seconde`인 `div` 태그의 위치를 `fixed`로 지정한다.
+
+```css
+body {
+    height: 1000vh;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    position: static;
+}
+#second {
+    background-color: teal;
+    position: fixed;
+}
+```
+
+스크롤을 내리면 빨간 박스가 화면에서 사라진다. 하지만 초록박스는 스크롤을 내려도 위치가 변하지 않는다. 이유는 위에서 말했듯이, 스크롤을 내리거나 페이지를 움직여도 **뷰포트의 동일한 위치에 고정**되어 있으며, 페이지의 흐름에 영향을 받지 않는다.
+
+<img src="css3.png">
+
+<img src="css4.png">
 

@@ -243,3 +243,86 @@ div {
 
 형제 관계가 아닌 부모, 자식 사이에서 어떻게 `relative`가 사용되는지 보자
 
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+</html>
+```
+
+```css
+.grandparent {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+}
+.parent {
+    background-color: blueviolet;
+    width: 150px;
+    height: 150px;
+}
+.child {
+    background-color: chartreuse;
+    width: 50px;
+    height: 50px;
+}
+```
+<img src="css8.png">
+
+
+인접하게 배치된 형제 관계와 달리, 조부모, 부모, 자식 관계로 설정했을 때는 겹쳐서 나타난다.
+
+추가로 설명하면,
+- **조부모(grandparent)** : 가장 큰 사각형으로, 화면에 먼저 배치된다.
+- **부모(parent)** : 조부모 내부에서 배치된다. 크기가 조부모보다 작기 때문에 안에 포함된다.
+- **자식(child)** : 부모 내부에서 기본 위치(좌측 상단)에 배치된다.
+
+이 상태에서 모두 기본값인 `static`이므로, 조부모, 부모, 자식이 **좌측 상단에 겹쳐 보이는 것이다.**
+
+
+여기서 부모와 자식의 `position`값을 `relative`로 지정해보자.
+
+```css
+.grandparent {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+}
+.parent {
+    background-color: blueviolet;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 20px;
+}
+.child {
+    background-color: chartreuse;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 20px;
+}
+```
+
+<img src="css9.png">
+
+부모와 자식의 `position`값을 `relative`로 지정하고 `top`값으로 **20px**을 지정한다.
+
+형제 관계와 마찬가지로 각 요소는 **20px**만큼 움직였다. 다만 부모, 자식 관계는 기본적으로 부모 위치를 기준으로 자식의 위치가 결정된다.
+
+하늘색=조부모, 보라색=부모, 초록색=자식
+
+- 보라색 요소(부모)는 부모인 하늘색 요소(조부모) 안에 위치 함
+- 보라색 요소(부모)는 자기 자신을 기준으로 **20px**만큼 부모의 아래에 위치함
+- 초록색 요소(자식)은 보라색 요소(부모)안에 위치 함
+- 초록색 요소(자식)은 자기 자신을 기준으로 **20px**만큼 부모의 아래에 위치함
+
+그림을 보면 마치 초록색 요소(자식)은 **40px**만큼 이동한 것 같지만 보라색 요소(부모)를 기준으로 **20px만** 움직인 것이다.
+
+정리하면,
+
+- 부모와 자식 요소의 `position`을 `relative`로 지정하면, 각 요소는 **자기 자신의 원래 위치를 기준**으로 `top: 20px` 만큼 아래로 이동한다.
+- 부모-자식 관계에서는 **부모의 위치가 자식의 배치 기준**이 된다.
+- 따라서 보라색 요소(부모)는 하늘색 요소(조부모) 내부에서 이동하고, 초록색 요소(자식)은 보라색 요소(부모) 내부에서 이동한다.

@@ -332,6 +332,30 @@ div {
 
 확인을 위해 자식 요소를 반투명 상태로 만들어서 보면, 결과는 아래와 같다.
 
+```css
+.grandparent {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+}
+.parent {
+    background-color: blueviolet;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: -20px;
+}
+.child {
+    background-color: chartreuse;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -20px;
+    opacity: 0.5;
+}
+```
+
+<img src="css10.png">
 
 
 
@@ -339,4 +363,69 @@ div {
 
 
 ## absolute : static이 아닌 가장 가까운 조상 기준 상대적 위치
+
+`relative`가 자기 자신을 기준으로 움직였다면, `absolute`는 `position`값이 `static`이 아닌 
+가장 가까운 조상 기준으로 움직인다. 여기서 **조상**이란 부모가 될 수 있는 모든 요소를 말한다.
+즉 `position`값이 `relative`, `absolute`, `fixed` 중 하나이면서 가장 가까운 조상의 위치를
+기준으로 움직이는 것이다.
+
+`absolute`는 특정 태그를 기준으로 움직이고 싶을 때 효과적이다. 기준이 되는 태그의 `position`값을 `relative`로 지정하고,
+움직이려는 태그의 `position`값을 `absolute`로 정하면 된다. 
+
+쉽게 설명하면
+
+`relative` = **내 방 안에서 움직이기** => 자신의 방 안에서 가구를 옮기는 것과 같다.
+
+예를 들어, 침대를 왼쪽으로 이동해도 **방 자체**는 변하지 않는다.
+
+즉, 내 방(원래 위치)가 기준이 되고, 그 안에서만 이동한다.
+
+
+`absolute` = **집 안에서 움직이기** => 방이 아니라 집 전체에서 가구를 옮긴다고 생각하면 집에서 어디를 기준으로 옮겨야 할까???
+
+1. 만약 **거실(relative 부모 요소)가 있다면** => 집 안에서 가장 가까운 "특별한 공간(부모요소)"는 거실이고 거실이 기준이 된다.
+그래서 소파를 거실 안에서 옮기는 것처럼 움직인다.
+
+2. **집 전체에 특별한 기준이 없다면** => 그냥 집 어디든 자유롭게 배치할 수 있다!(즉, body가 기준)
+
+
+
+### 형제 관계일 때
+
+형제 관계로 이루어진 코드에서 `position`값을 `relative`에서 `absolute`로 변경해보자.
+
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조부모, 부모 관계일</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>형제 관계일 때</h3>
+    <div class="up">
+        <div class="down">
+        </div>
+    </div>
+</body>
+</html>
+```
+
+```css
+.up {
+    background-color: indigo;
+    width: 100px;
+    height: 100px;
+}
+.down {
+    background-color: deeppink;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    opacity: 0.5;
+}
+```
 

@@ -429,6 +429,7 @@ div {
 }
 ```
 
+<img src="css12.png">
 
 `1` down 클래스 이름은 가진 태그의 `position`값을 `absolute`로 변경한다.
 
@@ -456,3 +457,42 @@ div {
 
 부모가 분명하게 보이는 부모, 자식 관계에서 `absolute`는 어떤 역할을 할까? 조부모의 `position`값을 `relative`로, 부모와 자식의 `position`값을 `absolute`로 바꿔보자.
 
+```css
+.grandparent {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.parent {
+    background-color: blueviolet;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+}
+.child {
+    background-color: chartreuse;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    
+}
+```
+
+<img src="css11.png">
+
+
+
+`relative`의 상황과 차이가 없어보이지만, 이는 `grandparent` 클래스를 가진 태그의 `position`값을 `relative`로 지정했기 때문이다. `absolute`는 `position`값이 `static`이 아닌 가장 가까운 조상을 기준으로 움직인다.
+
+1. 보라색 요소가 부모인 하늘색 요소 안에 위치 함
+2. 보라색 요소가 `relative`값을 가진 부모 태그로부터 20px만큼 아래에 위치함
+3. 연두색 요소가 부모인 보라색 요소 안에 위치 함
+4. 연두색 요소가 `relative`값을 가진 부모 태그로부터 20px 만큼 아래에 위치함
+
+
+깔끔하게 정리하면,
+
+`position`값이 `relative`인 요소는 자기 자신을 기준으로 움직이고, `absolute`인 요소는 `static`이 아닌 `postion`값을 가진 가장 가까운 부모 요소를 기준으로 움직인다.

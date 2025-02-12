@@ -11,3 +11,41 @@
 
 - 동적 가상 클래스
 - 구조적 가상 클래스
+
+## 동적 가상 클래스
+
+동적 가상 클래스(dynamic pseudo classes)는 어떤 상태나 조건이 발생할 때, 사용자의 액션에 따라 스타일이 바뀌는 선택자이다. 버튼을 클릭했을 때 색깔이 변하는 것처럼 사용자와 웹 페이지간의 상호작용이 필요할 때 사용한다. 대표적인 동적 가상 클래스는 `active`, `visited`, `disabled`, `hover`, `focus` 이다.
+
+## 액션이 필요해 : active
+
+`active`는 클릭 시 활성화되는 가상 클래스이다. 예를 들어 버튼을 누르면 `active` 가상 클래스가 활성화되어서 선택한 항목에 선언한 CSS 스타일이 적용된다.
+
+```css
+<style>
+  a:active { <!-- 적용 대상 태그 a와 가상 선택자 active -->
+    color : red
+  }
+</style>
+```
+
+`button` 태그를 사용하여 클릭할 때 텍스트 색이 바뀌는 코드를 작성하고, `active` 가상 클래스를 사용해 마우스로 버튼을 누를 때 연두색으로 변경해보자.
+
+```css
+<style>
+  button:active {
+    color: lime;
+  }
+</style>
+<button>클릭버튼</button>
+```
+
+클릭 전
+
+<img src="css2.png">
+
+클릭 시
+
+<img src="css1.png">
+
+
+

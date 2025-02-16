@@ -89,8 +89,9 @@
 
 ```css
 <style>
-  input:disabled { <!--적용 대상 태그 input과 가상 선택자 disabled-->
-    background: red <!--적용하려는 스타일-->
+  input:disabled { /*적용 대상 태그 input과 가상 선택자 disabled*/
+    background: red /*적용하려는 스타일*/
+    
   }
 </style>
 ```
@@ -109,8 +110,12 @@
 </body>
 ```
 
-`input` 태그를 이용하여 텍스트 폼을 작성하였지만 폼을 `disabled` 상태로 바꿔서 입력폼에 아무것도 쓸 수 없다. 보통 `disabled`는 단독으로 쓰이기보단 조건을 추가해 조건에 해당하지 않는 경우 폼에 입력을 할 수 없도록 만드는 용도로 사용된다.
+- `input` 태그를 이용하여 텍스트 폼을 작성하였지만 폼을 `disabled` 상태로 바꿔서 입력폼에 아무것도 쓸 수 없다. 
+
+- 보통 `disabled`는 단독으로 쓰이기보단 조건을 추가해 조건에 해당하지 않는 경우 폼에 입력을 할 수 없도록 만드는 용도로 사용된다.
 
 
 <img src="css7.png">
 
+
+## 마우스로 상호작용 : hover

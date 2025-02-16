@@ -52,7 +52,8 @@
 
 `visited` 가상 클래스는 사용자가 이미 방문한 링크를 표시해준다.
 
-이미 `visited` 가상 클래스는 일상에서 많이 보았다. 
+이미 `visited` 가상 클래스는 일상에서 많이 보았다. 검색창에 검색 후 특정 페이지를 들어갔다 나오면 클릭한 페이지의 텍스트 색깔이 바뀐다. 이유는 링크를 클릭하거나 방문할 때 `visited`로 표시되기 때문
+
 
 방문 전 링크 
 
@@ -62,3 +63,54 @@
 방문 후 링크
 
 <img src="css3.png">
+
+
+
+
+
+```css
+<style>
+  a:visited { <!--적용 대상 태그 a와 가상 선택자 visited-->
+      color: coral;
+  }
+</style>
+
+<body>
+  <a href="https://www.google.com/">Google Website</a>
+</body>
+```
+
+방문 전<img src="css5.png"> 방문 후<img src="css6.png">
+
+
+## 비활성화 : disabled
+
+`disabled` 가상 클래스는 비활성화된 요소를 나타낸다. 말 그대로 요소를 비활성화 시킨다.
+
+```css
+<style>
+  input:disabled { <!--적용 대상 태그 input과 가상 선택자 disabled-->
+    background: red <!--적용하려는 스타일-->
+  }
+</style>
+```
+
+활용을 해보자 `input` 태그를 사용하여 입력 폼을 만든 뒤 `disabled`를 사용하여 폼을 비활성화 
+
+```css
+<style>
+  input:disabled {
+    background: coral;
+  }
+</style>
+
+<body>
+  <input type="text" placeholder="Name" disabled>
+</body>
+```
+
+`input` 태그를 이용하여 텍스트 폼을 작성하였지만 폼을 `disabled` 상태로 바꿔서 입력폼에 아무것도 쓸 수 없다. 보통 `disabled`는 단독으로 쓰이기보단 조건을 추가해 조건에 해당하지 않는 경우 폼에 입력을 할 수 없도록 만드는 용도로 사용된다.
+
+
+<img src="css7.png">
+

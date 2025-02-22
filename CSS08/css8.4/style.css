@@ -1,3 +1,7 @@
-input:disabled {
-    background-color: coral;
+span {
+    background-color: gold;
+}
+
+span:hover {
+    background-color: greenyellow;
 }

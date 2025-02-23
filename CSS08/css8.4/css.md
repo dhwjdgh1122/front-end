@@ -164,3 +164,38 @@
 - 마우스 올린 후
 
 <img src="css9.png">
+
+
+## 클릭하면 반응하는 focus
+
+`focus`는 `input`으로 만든 폼 등 집중(focus)을 받은 요소를 나타낸다. PC에서는 마우스 클릭이나 **tab** 키를 클릭할 때, 스마트폰에서는 탭을 했을 때 발동한다.
+
+```css
+<style>
+  input:focus {
+    color:red;
+  }
+</style>
+
+```css
+<style>
+  .red-input:focus {
+    background: springgreen;
+    color: red;
+  }
+
+  .blue-input:focus {
+    background: springgreen;
+    color: blue;
+  }
+</style>
+
+<body>
+  <input class="red-input" value="클릭하면 빨갛게 변경" />
+  <input class="blue-input" value="클릭하면 파랗랗게 변경" />
+</body>
+```
+
+<img src="css10.png">
+
+<img src="css11.png">

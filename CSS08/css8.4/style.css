@@ -1,7 +1,8 @@
-span {
-    background-color: gold;
+.red-input:focus {
+    background: springgreen;
+    color: red;
 }
-
-span:hover {
-    background-color: greenyellow;
+.blue-input:focus {
+    background: springgreen;
+    color: blue;
 }

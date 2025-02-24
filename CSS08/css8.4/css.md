@@ -196,7 +196,11 @@
 </body>
 ```
 
+클릭했을 때 빨갛게 변경
+
 <img src="css10.png">
+
+클릭했을 때 파랗게 변경
 
 <img src="css11.png">
 

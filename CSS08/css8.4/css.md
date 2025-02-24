@@ -192,10 +192,13 @@
 
 <body>
   <input class="red-input" value="클릭하면 빨갛게 변경" />
-  <input class="blue-input" value="클릭하면 파랗랗게 변경" />
+  <input class="blue-input" value="클릭하면 파랗게 변경" />
 </body>
 ```
 
 <img src="css10.png">
 
 <img src="css11.png">
+
+
+## 구조적 가상 클래스 

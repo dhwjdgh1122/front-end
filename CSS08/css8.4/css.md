@@ -232,3 +232,5 @@ CSS에서 정의된 `:visited` 스타일을 적용한다. 하지만 보안상의
 
 
 ## 구조적 가상 클래스 
+
+구조적 가상 클래스(structural pseudo classes)는 `CSS`에서 id,class 등의 선택자를 사용하지 않고 요소를 선택할 수 있따.

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIA Live Region Example</title>
+    <style>
+        #status {
+            font-size: 18px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ARIA Live Region Example</h1>
+    
+    <button id="updateButton">Update Status</button>
+
+    <!-- ARIA live region -->
+    <div id="status" aria-live="assertive" role="alert">
+        Initial Status: Waiting for update...
+    </div>
+
+    <script>
+        document.getElementById('updateButton').addEventListener('click', function() {
+            const statusDiv = document.getElementById('status');
+            const currentTime = new Date().toLocaleTimeString();
+            statusDiv.textContent = `현재 시간은 ${currentTime}`; // "현재 시간은"을 추가
+        });
+    </script>
+
+</body>
+</html>

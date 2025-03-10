@@ -46,12 +46,15 @@
 
   <nav aria-label="페이지 네비게이션">
     <ul>
-      <li><a href="?page=1">1</a></li>
-      <li><a href="?page=2" aria-current="page">2</a></li>
-      <li><a href="?page=3">3</a></li>
-      <li><a href="?page=4">4</a></li>
+      <li><a href="?page=1" id="page1" aria-labelledby="page1">1</a></li>
+      <li><a href="?page=2" id="page2" aria-current="page" aria-labelledby="current-page">2</a></li>
+      <li><a href="?page=3" id="page3" aria-labelledby="page3">3</a></li>
+      <li><a href="?page=4" id="page4" aria-labelledby="page4">4</a></li>
     </ul>
+    <span id="current-page" hidden>현재 페이지 2</span>
   </nav>
+
+  <div aria-live="polite" id="page-announcement" hidden>현재 페이지는 2번입니다.</div>
 
 </body>
 </html>

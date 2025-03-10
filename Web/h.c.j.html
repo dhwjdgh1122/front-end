@@ -21,7 +21,7 @@
     <button id="updateButton">Update Status</button>
 
     <!-- ARIA live region -->
-    <div id="status" aria-live="assertive" role="alert">
+    <div id="status" aria-live="polite" role="alert">
         Initial Status: Waiting for update...
     </div>
 
@@ -29,7 +29,7 @@
         document.getElementById('updateButton').addEventListener('click', function() {
             const statusDiv = document.getElementById('status');
             const currentTime = new Date().toLocaleTimeString();
-            statusDiv.textContent = `현재 시간은 ${currentTime}`; // "현재 시간은"을 추가
+            statusDiv.textContent = "현재 시간은 " + currentTime; // 문자열 연결 방식
         });
     </script>
 

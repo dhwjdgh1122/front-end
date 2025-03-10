@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>접근성을 고려한 페이지 네비게이터</title>
+  <style>
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 10px;
+    }
+
+    li {
+      display: inline;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      color: #333;
+      font-size: 16px;
+    }
+
+    a:hover {
+      background-color: #f0f0f0;
+    }
+
+    a[aria-current="page"] {
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <nav aria-label="페이지 네비게이션">
+    <ul>
+      <li><a href="?page=1">1</a></li>
+      <li><a href="?page=2" aria-current="page">2</a></li>
+      <li><a href="?page=3">3</a></li>
+      <li><a href="?page=4">4</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>

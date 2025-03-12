@@ -259,4 +259,21 @@ CSS에서 정의된 `:visited` 스타일을 적용한다. 하지만 보안상의
 띄어쓰기에 주의해야 한다. CSS에서는 띄어쓰기는 자식 요소를 의미하기 때문에 띄어쓰기 없이 p:first-child를 작성하면
 형제 p 태그 중 첫 번째 요소를 가리키지만 띄어쓰기를 사용하여 p :first-child를 쓰면 p 태그의 자식 요소 중 첫 번째 요소를 가리킨다.
 
-## last-child
+
+```html
+<style>
+    p:first-child {
+      background-color: black;
+      padding: 5px;
+    }
+</style>
+
+<body>
+  <div>
+    <p>first-child 첫 번째 자식</p>
+    <p>first-child 첫 번째 자식이 아니다</p>
+  </div>
+  <div>
+    <h2>p 태그가 아니라 선택되지 않는다.</h2>
+  </div>
+</body>

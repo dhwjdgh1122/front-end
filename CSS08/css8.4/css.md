@@ -322,7 +322,7 @@ p:first-child {
 
 ```css
 p:first-child {
-    color: red;
+    color: blue;
 }
 ```
 
@@ -336,9 +336,15 @@ p:first-child {
 
 ```html
 <body>
-  <p>첫 번째 p 태그</p>
-  <p>두 번째 p 태그</p>
+  <p>첫 아들 오준호</p>
+  <p>둘 째 오치호</p>
 </body>
 ```
 
+
+<img src="css15.png">
+
 - 여기서 `p`태그들은 `body`의 자식 요소이므로, `first-child`는 `body` 안에서 첫 번째 `p`태그를 선택하게 된다.
+
+
+한 문장으로 중요하게 강조하자면, `first-child`는 **부모 요소 내에서 첫 번째 자식 요소를** 선택하는 선택자이므로, 부모-자식 관계가 성립하지 않는 독립적인 요소들에서는 `first-child` 선택자가 동작하지 않는다.

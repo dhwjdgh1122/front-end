@@ -1,8 +1,4 @@
-.red-input:focus {
-    background: springgreen;
-    color: red;
-}
-.blue-input:focus {
-    background: springgreen;
-    color: blue;
+p:first-child {
+    color: lime;
+    background-color: black;
 }

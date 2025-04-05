@@ -352,3 +352,4 @@ p:first-child {
 
 # 형제 중 마시막 요소 선택하기 : last-child
 
+이력서 작성

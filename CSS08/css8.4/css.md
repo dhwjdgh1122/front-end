@@ -352,4 +352,4 @@ p:first-child {
 
 # 형제 중 마시막 요소 선택하기 : last-child
 
-이력서 작성
+`last-child`는 형제 요소 중 마지막, 즉 막내 요소를 나타낸다.

@@ -362,4 +362,23 @@ p:first-child {
 </style>
 ```
 
-형제 중 마지막 요소 선택하기는
+
+```html
+<style>
+  p:last-child {
+    color: lime;
+    background-color: black;
+    padding: 5px;
+  }
+</style>
+
+<body>
+  <div>
+    <p>첫 째 오준호가 아닙니다. last-child이다.</p>
+    <p>막내 오정호입니다. last-child이다.</p>
+  </div>
+  <div>
+    <p>막내 오정호이지만 last-child가 아님</p>
+    <h2>last-child 이지만 p태그가 아님</h2>
+  </div>
+</body>

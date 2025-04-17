@@ -389,3 +389,38 @@ p:first-child {
 
 
 # 형제 위치 기반 요소 선택하기 : nth-of-type()
+
+`nth-of-type()`은 형제 그룹 안에서의 위치를 기반으로 형제 요소를 선택한다. 괄호 안을 **1,2,3**과  같이 숫자로 지정할 수도 있지만. **n+1**처럼 규칙으로도 지정할 수 있어 형제 선택에 유용하다.
+
+```html
+<style>
+ p:nth-of-type(2n+1) {
+    color: red;
+}
+p:nth-of-type(2n) {
+    color: blue;
+}
+p:nth-of-type(1) {
+    font-style: italic;
+}
+</style>
+
+<body>
+  <div>
+        <div>형제 소개 카운트 첫 div태그 카운트 세는곳 아님</div>
+        <p>첫 번째 p태그 첫 자식 오준호</p>
+        <P>두 번째 p태그 둘째 오치호</P>
+        <div>두 번째 div태그 카운트 세는곳 아님</div>
+        <P>세 번째 p태그 막내 오정호</P>
+    </div>
+</body>
+```
+
+<img src="css17.png">
+
+`nth-of-type()`를 이용하여 홀수,짝수, 첫 번째 문단을 지정하였다.
+p태그 기준으로 홀수 번째에 위치한 p 태그는 빨간색, 짝수 번째는 파란색으로 바뀐다. 추가로 직접 숫자를 지정한 `nth-of-type(1)`은 `first-child`와 같은 효과를 낸다.
+
+
+# 자식 중 유일한 요소 선택하기 : only-of-type
+

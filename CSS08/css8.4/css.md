@@ -386,3 +386,6 @@ p:first-child {
 
 <img src="css16.png">
 
+
+
+# 형제 위치 기반 요소 선택하기 : nth-of-type()

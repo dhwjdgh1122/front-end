@@ -382,3 +382,7 @@ p:first-child {
     <h2>last-child 이지만 p태그가 아님</h2>
   </div>
 </body>
+```
+
+<img src="css16.png">
+

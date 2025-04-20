@@ -1,10 +1,7 @@
-span :only-of-type {
-    color: red;
-}
-p:only-of-type {
-    background-color: lime;
+span {
+    background-color: gold;
 }
 
-div:only-of-type {
-    color: red;
+span:hover {
+    background-color: green;
 }

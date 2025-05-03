@@ -56,6 +56,8 @@ element {
 
 전환 타이밍 속성값으로는 `linear`, `ease-in`, `ease-out`, `ease-in-out`, `step-start`, `step-end`등이 있는데, 기본값은 `ease`이다.
 
+<img src="css2.png">
+
 자세한 건 구글에 **css animation transition-timing-function**으로 검색하자
 
 # 전환 지연
@@ -97,5 +99,23 @@ div:hover {
 `transition: background 500ms linear;` 로 작성할 수 있다.
 
 
+<img src="test.gif">
+
+
+# 변형
+
+**변형(transform)** CSS 속성을 사용하면 외적인 형태의 변형을 줄 수 있다. 또한 전환과 함께 사용하면 부드러운 애니메이션을 만들 수 있는데, **회전(rotate), 기울이기(skew), 크기(scale), 이동(translate)** 등이 있다.
+
+<img src="css1.png">
+
+공간에 대한 이해가 필요한데, 모든 변형은 세 축(X, Y, Z)을 중심으로 이루어진다. 어느 방향으로 움직이는지 파악하면서 변형을 사용해야 한다.
+
+- X축은 왼쪽에서 오른쪽으로 이동/변형되며 값은 오른쪽으로 증가한다.
+- Y축은 아래에서 위쪽으로 이동/변형되며 값은 위쪽으로 증가한다.
+- Z축은 화면에서 튀어 나와 더 큰 값이 화면에 더 가깝다.
+
+아래는 세 축을 표현한 그림이다.
+
+<img src="css3.png">
 
 

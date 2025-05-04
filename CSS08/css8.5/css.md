@@ -119,3 +119,37 @@ div:hover {
 <img src="css3.png">
 
 
+# 회전
+
+**회전(rotate)** 은 지정된 각도(단위는 deg)만큼 요소를 시계 방향 or 반시계 방향으로 회전시킨다. 양수는 시계방향으로, 음수는 시계 반대 방향으로 회전한다.
+
+
+```css
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    border: 5px solid red;
+    margin: 50px;
+}
+
+.transformed {
+    background-color: greenyellow;
+    transition: transform 1s ease-in-out;
+}
+
+.transformed:hover {
+    transform: rotate(45deg);
+}
+```
+```html
+<body>
+    <div class="container">
+        <div class="transformed">마우스 올릴 시 회전</div>
+        </div>
+</body>
+```
+
+<img src="test2.gif">

@@ -10,9 +10,10 @@ div {
 
 .transformed {
     background-color: greenyellow;
+    
     transition: transform 1s ease-in-out;
 }
 
 .transformed:hover {
-    transform: rotate(45deg);
+    transform: rotateX(45deg);
 }

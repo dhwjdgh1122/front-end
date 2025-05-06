@@ -154,4 +154,13 @@ div {
 
 <img src="test2.gif">
 
-transition-property md file
+
+# rotate에 따른 변화
+
+- **rotate(-45deg);**
+
+<img src="test3.gif">
+
+- **rotateX(45deg);**
+
+<img src="test4.gif">

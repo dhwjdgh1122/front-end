@@ -15,5 +15,5 @@ div {
 }
 
 .transformed:hover {
-    transform: rotateX(45deg);
+    transform: rotateZ(45deg);
 }

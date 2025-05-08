@@ -7,16 +7,11 @@ div {
 }
 
 @keyframes move {
-    0% {
-        transform: rotate(90deg);
+    from {
+        transform: rotate(9deg);
     }
-    25% {
-        transform: rotate(180deg);
-    }
-    75% {
-        transform: rotate(270deg);
-    }
-    100% {
+    to {
         transform: rotate(360deg);
     }
 }
+   

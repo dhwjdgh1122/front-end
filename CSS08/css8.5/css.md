@@ -492,3 +492,32 @@ div {
 
 # from to 지정 방식
 
+위에 말한 **백분율 방식**과 **from, to** 방식의 차이점은 **특징**에 있다.
+
+- **백분율 방식(%)** : 정교하고 세밀한 제어가 가능하고, 중간 단계를 자유롭게 지정할 수 있다.
+
+- **from, to 방식** : 간결하고 기본적인 애니메이션, 중간 단계 없이 시작과 끝만을 지정한다.
+
+```css
+div {
+    background-color: rgb(146, 146, 146);
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+    animation: move 3s infinite;
+}
+
+@keyframes move {
+    from {
+        transform: rotate(90deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+```
+
+<img src="test25.gif">
+
+**270도**씩 회전한다.
+

@@ -155,15 +155,18 @@ div {
 <img src="test2.gif">
 
 
+
+
 # rotate에 따른 변화
 
 - **rotate(-45deg);**
 
-<img src="test3.gif">
+<img src="test3.gif" width=200>
 
 - **rotateX(45deg);**
 
-<img src="test4.gif">
+<img src="test4.gif" width=200>
 
 
-이미지 생성중
+- **rotateY(45deg);**
+

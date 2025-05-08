@@ -12,7 +12,6 @@ div {
     background-color: yellowgreen;
     transition: transform 1s ease-in-out;
 }
-
 .transformed:hover {
-    transform: scale(0.5, 1.5);
+    transform: translate(12px, 50%);
 }

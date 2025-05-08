@@ -311,3 +311,59 @@ div {
 
 **이동(translate)** 은 요소를 상하좌우로 이동한다. 주어진 값이 양수이면 양의 방향으로, 음수이면 음의 방향으로 이동한다.
 
+```css
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    border: 5px solid red;
+    margin: 50px;
+}
+
+.transformed {
+    background-color: yellowgreen;
+    transition: transform 1s ease-in-out;
+}
+.transformed:hover {
+    transform: translate(50px);
+}
+```
+
+```html
+<body>
+    <div class="container">
+        <div class="transformed">마우스 올릴 시 이동</div>
+        </div>
+</body>
+```
+
+<img src="test18.gif" width=200>
+
+# translate에 따른 변화
+
+- **translateX(50px);**
+
+<img src="test18.gif" width=200>
+
+- **translateY(50px);**
+
+<img src="test19.gif" width=200>
+
+- **translate(15px,-40px);**
+
+<img src="test20.gif" width=200>
+
+- **translate(12px, 50%);**
+
+<img src="test21.gif" width=200>
+
+
+# 애니메이션을 동시에 적용하기
+
+웹 페이지가 움직이는 효과를 받았다면, 적용해보자
+
+- 여러 효과를 동시에 적용할 수 있다.
+- 애니메이션이 지정된 요소만 변경된다. 다른 형제 요소에는 영향을 미치지 않는다.
+

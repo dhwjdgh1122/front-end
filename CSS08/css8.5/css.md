@@ -367,3 +367,67 @@ div {
 - 여러 효과를 동시에 적용할 수 있다.
 - 애니메이션이 지정된 요소만 변경된다. 다른 형제 요소에는 영향을 미치지 않는다.
 
+```css
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    border: 5px solid red;
+    margin: 50px;
+}
+
+.transformed {
+    background-color: yellowgreen;
+    transition: transform 1s ease-in-out;
+}
+.transformed:hover {
+    transform: rotate(90deg) scale(0.5) translate(50px);
+}
+```
+
+```html
+<body>
+    <div class="container">
+        <div class="transformed">애니메이션 동시에 적용</div>
+        </div>
+</body>
+```
+
+<img src="test22.gif" width=200>
+
+
+# 애니메이션이 미치는 범위
+
+애니메이션은 지정한 요소의 형제 요소에 영향을 미치지 않는다를 확인해보자. 일부 코드를 수정해서 확인해보자
+
+```css
+div {
+    background-color: yellowgreen;
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+    transition: trasnform 1s ease-in-out;
+}
+
+div:hover {
+    transform: rotate(90deg) scale(2) translateX(50px);
+}
+```
+
+
+```html
+<body>
+    <div></div>
+    <p>p태그</p>
+</body>
+```
+
+<img src="test23.gif">
+
+초록색 배경이 p태그 요소를 가렸다. 애니메이션은 다른 태그에 영향을 미치지 않기 때문이다. 이 개념을 알아야 애니메이션과 함께 다른 요소를 같이 놓았을 때도 요소를 가리지 않고 적절한 간격으로 배치할 수 있다.
+
+
+# 키프레임
+

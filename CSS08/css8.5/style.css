@@ -1,17 +1,11 @@
 div {
-    width: 200px;
-    height: 200px;
-}
-
-.container {
-    border: 5px solid red;
-    margin: 50px;
-}
-
-.transformed {
     background-color: yellowgreen;
-    transition: transform 1s ease-in-out;
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+    transition: trasnform 1s ease-in-out;
 }
-.transformed:hover {
-    transform: translate(12px, 50%);
+
+div:hover {
+    transform: rotate(90deg) scale(2) translateX(50px);
 }

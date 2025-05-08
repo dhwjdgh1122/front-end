@@ -1,11 +1,22 @@
 div {
-    background-color: yellowgreen;
+    background-color: rgb(146, 146, 146);
     height: 200px;
     width: 200px;
     margin: 50px;
-    transition: trasnform 1s ease-in-out;
+    animation: move 3s infinite;
 }
 
-div:hover {
-    transform: rotate(90deg) scale(2) translateX(50px);
+@keyframes move {
+    0% {
+        transform: rotate(90deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

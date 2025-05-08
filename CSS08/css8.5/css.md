@@ -431,3 +431,64 @@ div:hover {
 
 # 키프레임
 
+`hover`를 사용한 애니메이션을 했다면, 마우스를 올리지 않고도 애니메이션이 동작할 수는 없을까??
+
+바로 `@keyframes`를 이용하면 애니메이션을 반복적으로 보여줄 수 있다.
+
+키프레임 단위로 애니메이션을 지정하면 애니메이션이 일어나고 있는 중간에 `CSS` 스타일을 변경할 수 있다.
+
+예를 들어 크기가 커졌다 회전하고 다시 작아지는 등 내가 원하는 애니메이션을 자유롭게 만들 수 있다.
+
+키프레임 사용은 스타일의 변화가 발생하는 시기를 백분율(0%~100%)로 지정하거나 `from/to`를 사용하여 지정한다. `0%와 from`은 애니메이션의 시작이고 `100%와 to`는 애니메이션 끝을 의미한다.
+
+# 백분율(0~100%) 지정 방식
+
+```css
+@keyframes animationname {keyframes-selector {css-styles;}}
+```
+- **animationname** : 애니메이션 이름
+- **keyframes-selector** : 애니메이션 키프레임의 비율
+- **css-styles** : 적용하려는 스타일
+
+
+```css
+div {
+    background-color: rgb(146, 146, 146);
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+    animation: move 3s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(90deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+```
+
+```html
+<body>
+    <div></div>
+    
+</body>
+```
+
+<img src="test24.gif">
+
+
+**핵심 포인트**는 `백분율%`은 애니메이션의 시작 위치를 지정하는 것이기 때문에
+**0%에서 90도 회전된 상태로 시작한다는 뜻이다.**
+
+
+# from to 지정 방식
+

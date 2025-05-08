@@ -9,11 +9,10 @@ div {
 }
 
 .transformed {
-    background-color: greenyellow;
-    
+    background-color: yellowgreen;
     transition: transform 1s ease-in-out;
 }
 
 .transformed:hover {
-    transform: skew(-0.06turn, 20deg)
+    transform: scale(0.5, 1.5);
 }

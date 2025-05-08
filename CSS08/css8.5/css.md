@@ -245,3 +245,63 @@ transform: skew(-0.06turn, 20deg); /* -21.6도, 20도 */
 
 
 # 크기
+
+**크기(scale)** 는 요소 크기를 늘리거나 줄인다. 1보다 큰 숫자는 요소 크기를 늘리고 1보다 작으면 줄인다. 
+
+- 숫자 2는 요소를 원래 크기보다 2배 크게 만든다.
+- 숫자 0.5는 절반 크기로 만든다.
+
+요소의 크기는 X축과 Y축으로 조정할 수 있다. X or Y 값을 지정하지 않으면 기본적으로 두 축에 영향을 준다.
+
+```css
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    border: 5px solid red;
+    margin: 50px;
+}
+
+.transformed {
+    background-color: greenyellow;
+    
+    transition: transform 1s ease-in-out;
+}
+
+/* X축만 2배, Y축은 절반 크기 */
+.transformed:hover {
+    transform: scale(2, 0.5)
+}
+```
+
+
+```html
+<body>
+    <div class="container">
+        <div class="transformed">마우스 올릴 시 크기 변화</div>
+        </div>
+</body>
+```
+
+<img src="test13.gif">
+
+# scale에 따른 변화
+
+- **scaleX(0.5);**
+
+<img src="test14.gif" width=200>
+
+- **scaleY(2);**
+
+<img src="test15.gif" width=200>
+
+
+- **scaleY(0.5);**
+
+<img src="test16.gif" width=200>
+
+- **scale(0.5, 1.5);**
+
+<img src="test17.gif" width=200>

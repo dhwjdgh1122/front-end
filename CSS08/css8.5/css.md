@@ -180,4 +180,68 @@ div {
 
  # 기울이기
 
- **기울이기(skew)**는 요소의 X축과 Y축을 제공된 값에 따라 기울인다. 각도가 양수이면 양의 방향으로, 음수이면 음의 방향으로 기울인다. X와 Y값을 따로 사용할 수도, 모두 사용하여 기울일 수도 있다.
+ **기울이기(skew)** 는 요소의 X축과 Y축을 제공된 값에 따라 기울인다. 각도가 양수이면 양의 방향으로, 음수이면 음의 방향으로 기울인다. X와 Y값을 따로 사용할 수도, 모두 사용하여 기울일 수도 있다.
+
+```css
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    border: 5px solid red;
+    margin: 50px;
+}
+
+.transformed {
+    background-color: greenyellow;
+    
+    transition: transform 1s ease-in-out;
+}
+
+.transformed:hover {
+    transform: skew(20deg)
+}
+```
+
+```html
+ <body>
+    <div class="container">
+        <div class="transformed">마우스 올릴 시 기울이기</div>
+        </div>
+</body>
+```
+
+<img src="test8.gif">
+
+
+# skew에 따른 변화
+
+- **skewX(40deg);**
+
+<img src="test9.gif">
+
+- **skewY(20deg);**
+
+<img src="test10.gif">
+
+- **skew(20deg, 20deg);**
+
+<img src="test11.gif">
+
+- **skew(-0.06turn, 20deg);**
+
+<img src="test12.gif">
+
+
+**turn** 단위는 `CSS`에서 각도를 표현하는 단위 중 하나로, 전체 회전(360°)을 1로 표현한다.
+
+- 반복 회전이나 동적 제어때 가독성을 위해 사용하는 듯하다.
+
+```css
+transform: rotate(0.25turn); /* 90도 */
+transform: skew(-0.06turn, 20deg); /* -21.6도, 20도 */
+```
+
+
+# 크기

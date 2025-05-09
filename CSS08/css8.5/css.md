@@ -172,7 +172,7 @@ div {
 
  <img src="test6.gif" width=200>
 
- - **rotateZ(45deg);**
+- **rotateZ(45deg);**
 
  <img src="test7.gif" width=200>
 

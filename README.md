@@ -1,4 +1,4 @@
-## HTML,CSS 독학 학습 저장소 및 블로그 작성
+## HTML,CSS 독학 저장소 및 블로그 작성
 
 
 [학습 블로그(titsory 링크)](https://ohjungho.tistory.com/)

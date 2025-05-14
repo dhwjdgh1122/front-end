@@ -46,7 +46,7 @@ HTML은 프로그래밍 언어가 아니다. 마크업, 즉 표시하는 언어�
 
 아래 코드는 HTML 기본 구조이다.
 
-```
+```html
 <!DOCTYPE html> <!-- 1 -->
 <html lang="ko">
 <head>   <!-- 2 -->

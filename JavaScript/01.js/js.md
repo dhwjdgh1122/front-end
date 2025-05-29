@@ -128,7 +128,7 @@ customElements.define('my-button', MyButton);
  <button>일반 버튼</button>
 
 <!-- 커스텀 버튼 -->
-<custom-button></custom-button>
+<custom-button>커스텀 버튼</custom-button>
 
 <style>
   button {
@@ -157,8 +157,11 @@ customElements.define('custom-button', CustomButton);
 
 <img src="button.png">
 
+<img src="button2.png">
+
 - **전역에서 모든 `button` 태그의 스타일을 파란색으로 지정**하고,
 - `커스텀 버튼`에서는 **Shadow DOM으로 감싸서 그 안의 `button`만 빨간색으로 따로 지정**했다.
+- `개발자 도구(F12)`를 통해 `커스텀 버튼`에 **Shadow DOM**이 적용된 걸 확인할 수 있다.
 
 두 버튼이 같은 페이지에 존재해도 서로의 스타일이 섞이지 않고,
 각각 자기만의 공간(쉐도우 돔)을 가지고 있는 것이다.
@@ -191,10 +194,10 @@ customElements.define('custom-button', CustomButton);
 
 `HTML`에서도 자주 쓰는 구조(카드, 알림 메시지, 목록 아이템 등)을 **미리 숨겨진 상태로** 만들어 두고,
 
-**"지금 당장은 필요 없지만(배가 안고프지만), 필요해지면(배고프면) `JavaScript`로 꺼내서(전자레인지에 데워서) 화면에 보여줄거야(먹을거야).
+**"지금 당장은 필요 없지만(배가 안고프지만), 필요해지면(배고프면) `JavaScript`**로 꺼내서(전자레인지에 데워서) 화면에 보여줄거야(먹을거야).
 
 ```html
-<template id="food-card>
+<template id="food-card">
 <div class="card">
   <h2>도시락 메뉴</h2>
   <P>밥, 계란말이, 김치</P>
@@ -203,3 +206,19 @@ customElements.define('custom-button', CustomButton);
 ```
 위 코드는 `HTML`안에 있지만, **바로 화면에 나타나진 않는다.**
 `JavaScript`가 꺼내서 화면에 붙일 때만 보여진다.
+
+
+```js
+const template = document.getElementById('food-card');
+const clone = template.content.cloneNode(true);
+document.body.appendChild(clone);
+```
+
+### HTML Template 핵심
+
+| 도시락 비유       | HTML Template         |
+| ------------ | --------------------- |
+| 미리 만들어둔 도시락  | `<template>` 태그 안의 구조 |
+| 냉장고에 숨겨져 있음  | DOM에 있지만 보이지 않음       |
+| 필요할 때 꺼내서 데움 | JS로 꺼내서 화면에 삽입        |
+| 효율적, 빠른 식사   | 재사용 가능, 렌더링 효율 ↑      |

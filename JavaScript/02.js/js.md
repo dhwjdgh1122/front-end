@@ -139,3 +139,23 @@ function resetOrder() {
   document.getElementById   ("order-result").innerHTML = "";    // 화면 정리리
   alert("주문이 초기화되었습니다!");    // 안내방송
 }
+```
+
+실수로 잘못 주문했을 때 **모든 걸 처음부터 다시** 할 수 있게 도와주는 직원이다.
+
+### 3. 결제 담당 직원 - `payOrder` 함수
+
+```js
+function payOrder() {
+  if (totalPrice === 0) {
+    alert("주문 내역이 없습니다.");
+  } else {
+    alert('총 금액은 ${totalPrice.toLocaleString()}원입니다.');
+  }
+}
+```
+
+- 주문이 없으면 -> "주문 내역이 없어요!"
+- 주문이 있으면 -> "총 35,000원입니다!"
+
+**각 함수는 정확히 하나의 일만** 담당한다. 필요할 때 이름을 부르면 **즉시 그 일을 처리**해준다.

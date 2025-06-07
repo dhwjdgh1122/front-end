@@ -69,7 +69,7 @@
 
 
 
-# JavaScript 기본 구성 요소 - 정호 레스토랑 예시시
+# JavaScript 기본 구성 요소 - 정호 레스토랑 예시
 
 ## 1. 변수(Variables) - 주문서와 계산대
 
@@ -103,10 +103,39 @@ totalPrice += =20000; // 총액에 20,000원 더 추가
 
 **변수는 정호 레스토랑의 메모장**이다. 데이터를 담고, 저장하고, 바꾸는 상자라고 생각하자.
 
-## 2. 함수(Functions)
+## 2. 함수(Functions) - 전문 직원들
 
-레스토랑에는 여러 **전문 직원**들이 있다.
+정호레스토랑에는 **각자 전문 분야**가 있는 직원들이 일한다 :
 
-- **요리사** : 주문표를 보고 -> 요리를 완성.
-- **웨이터** : 주문을 받으면 -> 주방에 전달 -> 음식을 서빙
-- **계산원** : 계산을 하고 -> 영수증을 손님에게 전달
+
+### 1. 주문 접수 직원 - `orderFood` 함수
+
+```js
+function orderFood(name, price) {
+  orderList.push(name); // 주문서에 음식 이름 기록
+  totalPrice += price; // 계산대에 가격 추가
+
+  // 주문 현황을 손님에게 보여주기
+  document.getElementById("order-result").innerHTML = `
+    <h3>주문 내역</h3>
+    <p>주문한 음식: ${orderList.join(", ")}</p>
+    <p>총 금액: ${totalPrice.toLocaleString()}원</p>
+    <button onclick="resetOrder()">주문 초기화</button>
+    <button onclick="payOrder()">결제하기</button>
+  `;
+}
+```
+이 직원은 :
+- 손님이 `orderFood('파스타', 15000)`라고 부르면
+- 주문서에 '파스타' 기록하고, 15,000원을 계산대에 추가
+- 현재 주문 상황을 화면에 정리해서 보여준다.
+
+### 2. 주문 초기화 직원 - `resetOrer` 함수
+
+```js
+function resetOrder() {
+  totalPrice = 0;   // 계산대 리셋
+  orderList = [];   // 주문서 비우기기
+  document.getElementById   ("order-result").innerHTML = "";    // 화면 정리리
+  alert("주문이 초기화되었습니다!");    // 안내방송
+}

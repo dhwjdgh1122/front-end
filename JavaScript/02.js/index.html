@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <script src="index.js" defer></script>
+  <meta charset="UTF-8">
+  <title>정호 레스토랑</title>
+  <style>
+    button {
+      margin-right: 10px;
+    }
+    #order-result {
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+    }
+  </style>
 </head>
 <body>
-  adsdad
+
+  <h1>정호 레스토랑</h1>
+
+  <h3>메뉴</h3>
+  <button onclick="orderFood('파스타', 15000)">파스타 - 15,000원</button>
+  <button onclick="orderFood('피자', 20000)">피자 - 20,000원</button>
+
+  <div id="order-result"></div>
+
+  <script>
+    alert("정호 레스토랑 오픈!");
+
+    let totalPrice = 0;
+    let orderList = [];
+
+    function orderFood(name, price) {
+      orderList.push(name);
+      totalPrice += price;
+
+      document.getElementById("order-result").innerHTML = `
+        <h3>주문 내역</h3>
+        <p>주문한 음식: ${orderList.join(", ")}</p>
+        <p>총 금액: ${totalPrice.toLocaleString()}원</p>
+        <button onclick="resetOrder()">주문 초기화</button>
+        <button onclick="payOrder()">결제하기</button>
+      `;
+    }
+
+    function resetOrder() {
+      totalPrice = 0;
+      orderList = [];
+      document.getElementById("order-result").innerHTML = "";
+      alert("주문이 초기화되었습니다!");
+    }
+
+    function payOrder() {
+      if (totalPrice === 0) {
+        alert("주문 내역이 없습니다.");
+      } else {
+        alert(`총 금액은 ${totalPrice.toLocaleString()}원입니다.`);
+      }
+    }
+  </script>
+
 </body>
 </html>

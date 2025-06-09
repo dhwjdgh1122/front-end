@@ -4,9 +4,7 @@
   <meta charset="UTF-8">
   <title>정호 레스토랑</title>
   <style>
-    button {
-      margin-right: 10px;
-    }
+    button { margin-right: 10px; }
     #order-result {
       margin-top: 20px;
       border-top: 1px solid #ccc;
@@ -15,25 +13,21 @@
   </style>
 </head>
 <body>
-
   <h1>정호 레스토랑</h1>
-
   <h3>메뉴</h3>
   <button onclick="orderFood('파스타', 15000)">파스타 - 15,000원</button>
   <button onclick="orderFood('피자', 20000)">피자 - 20,000원</button>
-
   <div id="order-result"></div>
 
   <script>
     alert("정호 레스토랑 오픈!");
-
+    
     let totalPrice = 0;
     let orderList = [];
 
     function orderFood(name, price) {
       orderList.push(name);
       totalPrice += price;
-
       document.getElementById("order-result").innerHTML = `
         <h3>주문 내역</h3>
         <p>주문한 음식: ${orderList.join(", ")}</p>
@@ -58,6 +52,5 @@
       }
     }
   </script>
-
 </body>
 </html>

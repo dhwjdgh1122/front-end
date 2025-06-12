@@ -20,12 +20,5 @@
 
 ### JavaScript
 
-- [x] **JavaScript란?** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/01.js/js.md) 
-
-자바스크립트 챕터
-
-메모장 정리, 블로그 작성중, 내용 수정 및 마지막 최종 작성중
-
-웹 컴포넌트 md file 작성
-js란 md 작성중
-초안 작성중
+- [x] **JavaScript란?** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/02.js/js.md) 
+- [x] **웹 컴포넌트(Web Components)** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/01.js/js.md)

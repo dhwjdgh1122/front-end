@@ -1,10 +1,10 @@
-## HTML,CSS 독학 저장소 및 블로그 작성
+## HTML, CSS, JS 학습 블로그 
 
 
 [학습 블로그(titsory 링크)](https://ohjungho.tistory.com/)
 
 ### HTML
-- [x] **웹, HTML이 뭘까?** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/html01/html-web.md)
+- [x] **웹, HTML** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/html01/html-web.md)
 - [x] **HTML 태그와 특징, 부모 자식 관계** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/html02/html-tag-features.md)
 
 
@@ -20,5 +20,5 @@
 
 ### JavaScript
 
-- [x] **JavaScript란?** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/02.js/js.md) 
+- [x] **JavaScript** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/02.js/js.md) 
 - [x] **웹 컴포넌트(Web Components)** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/01.js/js.md)

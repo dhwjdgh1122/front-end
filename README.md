@@ -24,6 +24,4 @@
 - [x] **웹 컴포넌트(Web Components)** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/01.js/js.md)
 
 
-웹 상호작용 
-블로그 작성중 , 코테 준비 , node.js 학습중
-이력서 수정
+Obsidian Grpah View 학습

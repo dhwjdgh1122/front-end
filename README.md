@@ -24,4 +24,5 @@
 - [x] **웹 컴포넌트(Web Components)** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/01.js/js.md)
 
 
-Obsidian Grpah View 학습
+Obsidian Grpah View 학습 
+html,css 작성

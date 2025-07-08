@@ -27,3 +27,4 @@
 Obsidian Grpah View 학습 
 html,css 작성
 블로그 옵시디언 작성
+ai 학습 성과 지표 차별점 작성중

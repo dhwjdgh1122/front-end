@@ -24,14 +24,4 @@
 - [x] **웹 컴포넌트(Web Components)** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/01.js/js.md)
 
 
-Obsidian Grpah View 학습 
-html,css 작성
-블로그 옵시디언 작성
-ai 학습 성과 지표 차별점 작성중
-
-ai 내용 정리중
-ai 블로그 작성 완료
-옵시디언 코드 리팩토링
-이력서 수정하기
-블로그 생각 정리
-2주간의 알바 끝... 이제 다시 시작
+약 2주간의 두부집 알바 블로그 작성

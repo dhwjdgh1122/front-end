@@ -24,5 +24,5 @@
 - [x] **웹 컴포넌트(Web Components)** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/01.js/js.md)
 
 
-약 2주간의 두부집 알바 블로그 수정중
+약 2주간의 두부집 알바 블로그 작성완료 게시끝
 앞으로의 방향성 작성

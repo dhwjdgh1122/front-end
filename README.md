@@ -24,11 +24,4 @@
 - [x] **웹 컴포넌트(Web Components)** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/01.js/js.md)
 
 
-to do list 
-HTML5 시맨틱 태그 웹 접근성, 유효성, 등 
-회사 자소서 작성 제출 완료
-
-9월,10월,11월,12월 일정 계획표 
-
-블로그 일상 작성하기
-회고 작성
+9월 일정표 작성 완료

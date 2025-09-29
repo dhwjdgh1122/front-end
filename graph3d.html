@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>2D Graph — D3 Force</title>
+<style>
+  body { margin:0; font-family:system-ui, sans-serif; background:#0b1020; color:#fff; }
+  #app { width:100vw; height:100vh; display:flex; }
+  svg { width:100%; height:100%; }
+  .node circle { stroke: #111; stroke-width:1px; }
+  .node text { pointer-events:none; font-size:11px; fill:#eee; }
+  .tooltip { position: absolute; background:#111a2b; color:#fff; padding:6px 8px; border-radius:6px; font-size:12px; box-shadow:0 4px 12px rgba(0,0,0,0.6);}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<div id="tooltip" class="tooltip" style="display:none;"></div>
+
+<script src="https://unpkg.com/d3@7"></script>
+<script>
+// 샘플 데이터 (Obsidian-graph 스타일)
+const graph = {
+  nodes: [
+    { id: "Design", group: 1 },
+    { id: "Tech", group: 2 },
+    { id: "AI", group: 2 },
+    { id: "Physics", group: 3 },
+    { id: "Extremis", group: 4 },
+    { id: "Notes/Idea1", group: 5 },
+    { id: "Notes/Idea2", group: 5 }
+  ],
+  links: [
+    { source: "Design", target: "Tech" },
+    { source: "Tech", target: "AI" },
+    { source: "AI", target: "Extremis" },
+    { source: "Physics", target: "Extremis" },
+    { source: "Notes/Idea1", target: "Design" },
+    { source: "Notes/Idea2", target: "AI" }
+  ]
+};
+
+const width = window.innerWidth, height = window.innerHeight;
+const svg = d3.select("#app").append("svg");
+const g = svg.append("g");
+
+const link = g.append("g")
+  .attr("stroke", "rgba(255,255,255,0.12)")
+  .selectAll("line")
+  .data(graph.links)
+  .enter().append("line")
+  .attr("stroke-width", d => 1.5);
+
+const node = g.append("g")
+  .selectAll("g")
+  .data(graph.nodes)
+  .enter().append("g")
+  .attr("class", "node")
+  .call(drag(d3.forceSimulation()
+      .force("link", d3.forceLink(graph.links).id(d => d.id).distance(120).strength(0.6))
+      .force("charge", d3.forceManyBody().strength(-240))
+      .force("center", d3.forceCenter(width/2, height/2))
+  ));
+
+node.append("circle")
+  .attr("r", d => 18)
+  .attr("fill", d => color(d.group))
+  .attr("opacity", 0.95);
+
+node.append("text")
+  .attr("dy", 4)
+  .attr("x", 0)
+  .attr("text-anchor", "middle")
+  .text(d => d.id);
+
+const simulation = d3.forceSimulation(graph.nodes)
+  .force("link", d3.forceLink(graph.links).id(d => d.id).distance(120).strength(0.6))
+  .force("charge", d3.forceManyBody().strength(-240))
+  .force("center", d3.forceCenter(width/2, height/2))
+  .on("tick", ticked);
+
+function ticked() {
+  link
+    .attr("x1", d => d.source.x)
+    .attr("y1", d => d.source.y)
+    .attr("x2", d => d.target.x)
+    .attr("y2", d => d.target.y);
+
+  node.attr("transform", d => `translate(${d.x},${d.y})`);
+}
+
+// 드래그 핸들
+function drag(sim) {
+  function dragstarted(event,d) {
+    if (!event.active) sim.alphaTarget(0.3).restart();
+    d.fx = d.x; d.fy = d.y;
+  }
+  function dragged(event,d) { d.fx = event.x; d.fy = event.y; }
+  function dragended(event,d) {
+    if (!event.active) sim.alphaTarget(0);
+    d.fx = null; d.fy = null;
+  }
+  return d3.drag()
+    .on("start", dragstarted)
+    .on("drag", dragged)
+    .on("end", dragended);
+}
+
+function color(group){
+  const pal = ["#1f77b4","#2ca02c","#ff7f0e","#d62728","#9467bd","#8c564b"];
+  return pal[(group-1) % pal.length];
+}
+
+// 줌/팬
+svg.call(d3.zoom()
+  .scaleExtent([0.3, 6])
+  .on("zoom", (event) => g.attr("transform", event.transform))
+);
+
+// 간단한 툴팁
+const tooltip = document.getElementById('tooltip');
+node.on("mouseover", (event,d) => {
+  tooltip.style.display = 'block';
+  tooltip.style.left = (event.pageX + 8) + 'px';
+  tooltip.style.top = (event.pageY + 8) + 'px';
+  tooltip.innerText = d.id;
+});
+node.on("mouseout", () => tooltip.style.display = 'none');
+
+</script>
+</body>
+</html>

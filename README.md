@@ -24,9 +24,4 @@
 - [x] **웹 컴포넌트(Web Components)** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/01.js/js.md)
 
 
-9월 일정표 작성 완료
-포스터 작성 완료
-
-옵시디언 그래프 뷰 만들어보기 블로그작성중
-
-일상 알바 작성
+bim cad 건축 설계 정보 

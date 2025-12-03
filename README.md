@@ -24,14 +24,4 @@
 - [x] **웹 컴포넌트(Web Components)** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/01.js/js.md)
 
 
-bim cad 건축 설계 정보 
-블로그 내용 정리
-일상 내용 
-ppt 작성
-금연예방교육 ppt 작성완료 
-11월 중간 일정 작성
-리액트 학습 저장소 및 학습 블로그 작성하기
-이력서 작성
-잡코리아 등록
-운동일지 작성
-블로그 내용 작성 
+12월 일정 작성

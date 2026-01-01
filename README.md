@@ -24,6 +24,4 @@
 - [x] **웹 컴포넌트(Web Components)** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/01.js/js.md)
 
 
-12월 일정 작성
-로드맵 작성 및 정리
-인턴십 일정 정리
+2026 로드맵 작성

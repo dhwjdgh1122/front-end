@@ -23,8 +23,4 @@
 - [x] **JavaScript** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/02.js/js.md) 
 - [x] **웹 컴포넌트(Web Components)** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/01.js/js.md)
 
-
-2026 로드맵 작성
-
-구글 ai 강의 선물 블로그 작성
-블로그 js,react 작성
+정보처리기사 자격증 준비?? 

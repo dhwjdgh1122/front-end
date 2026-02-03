@@ -24,4 +24,4 @@
 - [x] **웹 컴포넌트(Web Components)** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/01.js/js.md)
 
 정보처리기사 자격증 준비?? 
-코딩테스트 준비
+코딩테스트 준비해보자.

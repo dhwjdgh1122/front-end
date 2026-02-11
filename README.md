@@ -1,4 +1,4 @@
-## HTML, CSS, JS 학습 블로그 
+## 학습 블로그 및 개인 공부
 
 
 [학습 블로그(titsory 링크)](https://ohjungho.tistory.com/)

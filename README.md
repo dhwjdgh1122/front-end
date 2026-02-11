@@ -23,9 +23,7 @@
 - [x] **JavaScript** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/02.js/js.md) 
 - [x] **웹 컴포넌트(Web Components)** [README.md](https://github.com/dhwjdgh1122/front-end/blob/main/JavaScript/01.js/js.md)
 
-정보처리기사 자격증 준비?? 
-코딩테스트 준비해보자.
 
-미래 진로 생각
+### Obsidian Graph View
 
-obsidian graph view 블로그 작성하기
+- [x] **Obsidian Graph View** [tistory 블로그](https://ohjungho.tistory.com/29)

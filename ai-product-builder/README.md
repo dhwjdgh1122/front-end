@@ -53,3 +53,4 @@ https://adsense-ko.googleblog.com/2012/09/2.html
 구글 애널리틱스 사이트를 이용하여 분석하자 
 
 
+2. 수익성 

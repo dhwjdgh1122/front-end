@@ -32,4 +32,4 @@
 
 ### AI Product Builder 
 
-블로그 연결 작성
+블로그 연결 작성링크란

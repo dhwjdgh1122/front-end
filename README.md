@@ -32,4 +32,4 @@
 
 ### AI Product Builder 
 
-블로그 연결 작성링크란
+깃푸쉬 테스트 

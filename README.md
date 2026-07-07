@@ -32,4 +32,4 @@
 
 ### AI Product Builder 
 
-깃푸쉬 테스트 6월1일
+넥슨 이력서 작성
